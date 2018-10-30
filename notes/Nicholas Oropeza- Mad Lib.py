@@ -10,7 +10,7 @@ onomatopoeia_2 = input("Please enter another onomatopoeia")
 noun_6 = input("Please input the final noun")
 
 print("The %s™ Pacer Test is a multi-stage %s capacity "
-      "test that progressively gets more difficult as it continues." % (noun_1, adjective_ic_1))
+      "test that progressively gets more difficult as it continues." % (noun_1 , adjective_ic_1))
 print()
 print("The 20-%s Pacer test will begin in 30 %s. Line up at the start. " % (noun_2, noun_3))
 print("The %s speed starts slowly, but gets faster every %s after you hear this signal: *%s*" % (verb_ing, noun_4,
