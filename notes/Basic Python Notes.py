@@ -121,7 +121,7 @@ if sunny:
     print("Go outside")
 
 
-def grade_calc (percentage):
+def grade_calc(percentage):
     if percentage >= 90:
         return "A"
     elif percentage >= 80:
@@ -141,4 +141,12 @@ print(your_grade)
 import random  # This should be on line 1
 print(random.randint(0, 100))
 
-
+# Equality Statements
+print(5 > 3)
+print(5 >= 3)
+print(3 == 3)
+print(3 != 4)
+"""
+a == # A is set to 3
+a == # Is a equal to 3?
+"""
