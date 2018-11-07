@@ -1,24 +1,25 @@
 import random
 random_number = random.randint(1, 10)
-guesses = 5
+guesses_left = 5
+playing = True
 guess = (int(input("Enter a random number between 1 and 10")))
 
-while guess != random_number and guesses > 0:
+while guesses_left > 0 and playing and guess != random_number:
     if guess < random_number:
         print("Higher")
-        guesses -= 1
+        guesses_left -= 1
         guess = (int(input("Go again")))
         print()
     else:
         print("Lower")
-        guesses -= 1
+        guesses_left -= 1
         guess = (int(input("Go again")))
         print()
 
-while guesses == 0:
+while guesses_left == 0 and playing:
     print("You lost")
-    break
+    playing = False
 
-while guess == random_number:
+while guess == random_number and playing:
     print("Good job you win")
-    break
+    playing = False
