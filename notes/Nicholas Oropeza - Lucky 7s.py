@@ -2,7 +2,6 @@ import random
 "The is a gambling game in where you can't win and where the money isn't real, "
 "called 'Lucky 7s'"
 
-
 money = int(15)  # The amount of money you start with
 max_money = int(15)  # The most amount of money you've had
 max_roll = int(0)  # The roll on which you had the most money

@@ -1,7 +1,9 @@
 import random
 playing = True
 guesses_left = 6
-letter = input("Enter a letter ")
+guessed_letters = []
+# guess = input("Guess a letter")
+words = ["monopoly", "mozart", "december", "cinema", "random",
+         "cheese burger", "mario kart", "korea", "sponge bob"]
 
-while guesses_left > 0 and playing:
-    placeholder
+print(random.choice(words))
