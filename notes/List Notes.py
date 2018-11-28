@@ -87,6 +87,7 @@ new_list.append("Pikachu")
 new_list.append("Yoshi")
 new_list.remove("Mario")
 print(new_list)
+print()
 
 # Also removing stuff from a list
 print(food_list)
