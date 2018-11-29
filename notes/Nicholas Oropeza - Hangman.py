@@ -3,7 +3,11 @@ playing = True
 guesses_left = 6
 guessed_letters = []
 # guess = input("Guess a letter")
-words = ["monopoly", "mozart", "december", "cinema", "random",
-         "cheese burger", "mario kart", "korea", "sponge bob"]
+words = ["Germany", "North Korea", "South Korea",
+         "Japan", "Mexico", "Australia", "Canada"]
 
-print(random.choice(words))
+for character in words:
+    if character == "u":
+        current_index = words.index(characters)
+        words.pop(current_index)
+        words.insert(current_index, "*")
