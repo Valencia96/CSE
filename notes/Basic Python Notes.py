@@ -150,3 +150,13 @@ print(3 != 4)
 a == # A is set to 3
 a == # Is a equal to 3?
 """
+
+# Function Notes
+# a**2 + b**2 = c**2
+
+
+def pythagorean(a, b):
+    return (a**2 + b**2)**(1/2)
+
+
+print(pythagorean(3, 4))
