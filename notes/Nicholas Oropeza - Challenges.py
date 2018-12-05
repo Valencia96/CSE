@@ -6,10 +6,10 @@ def challenge1(first_name, last_name):
 print(challenge1("Nico", "Oropeza"))
 
 
-def challenge2(numb):
-    if numb % 2 == 0:
+def challenge2(n):
+    if n % 2 == 0:
         return "This is an even number"
-    elif numb % 2 == 1:
+    else:
         return "This is an odd number"
 
 
@@ -23,21 +23,21 @@ def challenge3(a, b):
 print(challenge3(3, 4))
 
 
-def challenge4(number):
-    if number < 0:
-        return number, 'is Negative'
-    elif number > 0:
-        return number, 'is Positive'
+def challenge4(n):
+    if n < 0:
+        return n, 'is Negative'
+    elif n > 0:
+        return n, 'is Positive'
     else:
-        return number, 'is Zero'
+        return n, 'is Zero'
 
 
 print(challenge4(0))
 
 
 # Medium Challenges
-def challenge5(r):
-    return 3.14 * r ** 2
+def challenge5(radius):
+    return 3.14 * radius ** 2
 
 
 print(challenge5(2))
@@ -51,9 +51,21 @@ print(challenge6(2))
 
 
 def challenge7(n):
-    int(n)
     return n + n * n + n * n * n
 
 
 print(challenge7(6))
 
+
+def challenge8(n):
+    if n >= 1850:
+        return "In range"
+    elif n > 2150:
+        return "Not in range"
+    elif n >= 2850:
+        return "In range"
+    elif n > 3150:
+        return "Not in range"
+
+
+print(challenge8(1840))
