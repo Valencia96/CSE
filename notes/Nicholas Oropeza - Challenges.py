@@ -69,3 +69,14 @@ def challenge8(n):
 
 
 print(challenge8(1840))
+
+
+def challenge9(ch):
+    if (ch == 'A' or ch == 'a' or ch == 'E' or ch == 'e' or ch=='I'
+     or ch == 'i' or ch == 'O' or ch == 'o' or ch == 'U' or ch =='u'):
+        return "This letter is a vowel"
+    else:
+        return "This isn't a vowel"
+
+
+print(challenge9("b"))

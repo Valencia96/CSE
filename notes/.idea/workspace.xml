@@ -10,9 +10,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Mad_Libs_2.coverage" NAME="Nicholas Oropeza - Mad Libs 2 Coverage Results" MODIFIED="1543426399825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lucky_7s.coverage" NAME="Nicholas Oropeza - Lucky 7s Coverage Results" MODIFIED="1542388666583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1543856449654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Challenges.coverage" NAME="Nicholas Oropeza - Challenges Coverage Results" MODIFIED="1544031195599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Challenges.coverage" NAME="Nicholas Oropeza - Challenges Coverage Results" MODIFIED="1544117765952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lucky_7s.coverage" NAME="Nicholas Oropeza - Lucky 7s Coverage Results" MODIFIED="1544118043006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Guess_Game.coverage" NAME="Nicholas Oropeza - Guess Game Coverage Results" MODIFIED="1543510762087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Hangman.coverage" NAME="Nicholas Oropeza - Hangman Coverage Results" MODIFIED="1543601463101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza__Mad_Lib.coverage" NAME="Nicholas Oropeza- Mad Lib Coverage Results" MODIFIED="1541090552472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -82,33 +82,33 @@
           <entry key="project.open.time.60" value="2" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="2" />
-          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.66" value="2" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.72" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="py" value="12618" />
+          <entry key="py" value="13022" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="12618" />
+          <entry key="Python" value="13022" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="50" />
+          <entry key="Python" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="50" />
+          <entry key="py" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -116,43 +116,35 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Challenges.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-                  <folding>
-                    <marker date="1544031858798" expanded="true" signature="56:61" ph="..." />
-                    <marker date="1544031858798" expanded="true" signature="149:284" ph="..." />
-                    <marker date="1544031858798" expanded="true" signature="305:310" ph="..." />
-                    <marker date="1544031858798" expanded="true" signature="384:389" ph="..." />
-                    <marker date="1544031858798" expanded="true" signature="664:665" ph="..." />
-                    <marker date="1544031858798" expanded="true" signature="821:826" ph="..." />
-                    <marker date="1544031858798" expanded="true" signature="821:1012" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/List Notes.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1350">
-                  <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Challenges.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
+              <folding>
+                <marker date="1544118135830" expanded="true" signature="56:61" ph="..." />
+                <marker date="1544118135830" expanded="true" signature="149:284" ph="..." />
+                <marker date="1544118135830" expanded="true" signature="305:310" ph="..." />
+                <marker date="1544118135830" expanded="true" signature="384:389" ph="..." />
+                <marker date="1544118135830" expanded="true" signature="664:665" ph="..." />
+                <marker date="1544118135830" expanded="true" signature="821:826" ph="..." />
+                <marker date="1544118135830" expanded="true" signature="821:1012" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,13 +169,13 @@
       <list>
         <option value="$PROJECT_DIR$/Nicholas Oropeza- Mad Lib.py" />
         <option value="$PROJECT_DIR$/venv/Nicholas Oropeza - Lucky 7s.py" />
-        <option value="$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py" />
         <option value="$PROJECT_DIR$/List Notes.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Mad Libs 2.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Guess Game.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Hangman.py" />
         <option value="$PROJECT_DIR$/Fix It.py" />
         <option value="$PROJECT_DIR$/Basic Python Notes.py" />
+        <option value="$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Challenges.py" />
       </list>
     </option>
@@ -246,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Nicholas Oropeza - Challenges">
+  <component name="RunManager" selected="Python.Nicholas Oropeza - Lucky 7s">
     <configuration name="Basic Python Notes" type="PythonConfigurationType" factoryName="Python">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,28 +327,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Nicholas Oropeza - Guess Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nicholas Oropeza - Guess Game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Nicholas Oropeza - Hangman" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -371,6 +341,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nicholas Oropeza - Hangman.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Nicholas Oropeza - Lucky 7s" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,17 +398,17 @@
       <item itemvalue="Python.Basic Python Notes" />
       <item itemvalue="Python.Nicholas Oropeza - Hangman" />
       <item itemvalue="Python.List Notes" />
-      <item itemvalue="Python.Nicholas Oropeza - Guess Game" />
       <item itemvalue="Python.Fix It" />
       <item itemvalue="Python.Nicholas Oropeza - Challenges" />
+      <item itemvalue="Python.Nicholas Oropeza - Lucky 7s" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Nicholas Oropeza - Lucky 7s" />
         <item itemvalue="Python.Nicholas Oropeza - Challenges" />
         <item itemvalue="Python.Fix It" />
         <item itemvalue="Python.Nicholas Oropeza - Hangman" />
         <item itemvalue="Python.List Notes" />
-        <item itemvalue="Python.Nicholas Oropeza - Guess Game" />
       </list>
     </recent_temporary>
   </component>
@@ -435,8 +427,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24054463" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -499,13 +492,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Nicholas Oropeza - Lucky 7s.py" />
-    <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Mad Libs 2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -546,31 +532,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="148" column="3" lean-forward="true" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
-          <folding>
-            <marker date="1543856545016" expanded="true" signature="2700:2705" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/List Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
+        <state relative-caret-position="293">
           <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Challenges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="341">
+          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
           <folding>
-            <marker date="1544031858798" expanded="true" signature="56:61" ph="..." />
-            <marker date="1544031858798" expanded="true" signature="149:284" ph="..." />
-            <marker date="1544031858798" expanded="true" signature="305:310" ph="..." />
-            <marker date="1544031858798" expanded="true" signature="384:389" ph="..." />
-            <marker date="1544031858798" expanded="true" signature="664:665" ph="..." />
-            <marker date="1544031858798" expanded="true" signature="821:826" ph="..." />
-            <marker date="1544031858798" expanded="true" signature="821:1012" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="56:61" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="149:284" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="305:310" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="384:389" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="664:665" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="821:826" ph="..." />
+            <marker date="1544118135830" expanded="true" signature="821:1012" ph="..." />
           </folding>
         </state>
       </provider>
