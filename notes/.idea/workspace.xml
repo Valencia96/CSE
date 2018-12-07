@@ -11,8 +11,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Mad_Libs_2.coverage" NAME="Nicholas Oropeza - Mad Libs 2 Coverage Results" MODIFIED="1543426399825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1543856449654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Challenges.coverage" NAME="Nicholas Oropeza - Challenges Coverage Results" MODIFIED="1544117765952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lucky_7s.coverage" NAME="Nicholas Oropeza - Lucky 7s Coverage Results" MODIFIED="1544118043006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lucky_7s.coverage" NAME="Nicholas Oropeza - Lucky 7s Coverage Results" MODIFIED="1544205493772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Challenges.coverage" NAME="Nicholas Oropeza - Challenges Coverage Results" MODIFIED="1544207851708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Guess_Game.coverage" NAME="Nicholas Oropeza - Guess Game Coverage Results" MODIFIED="1543510762087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Hangman.coverage" NAME="Nicholas Oropeza - Hangman Coverage Results" MODIFIED="1543601463101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza__Mad_Lib.coverage" NAME="Nicholas Oropeza- Mad Lib Coverage Results" MODIFIED="1541090552472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -66,7 +66,7 @@
     <session id="-97402428">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.38" value="1" />
@@ -74,7 +74,7 @@
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.57" value="1" />
@@ -86,19 +86,19 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.70" value="1" />
           <entry key="project.open.time.72" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="py" value="13022" />
+          <entry key="py" value="13360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="13022" />
+          <entry key="Python" value="13360" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -120,16 +120,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Challenges.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
+            <state relative-caret-position="545">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
               <folding>
-                <marker date="1544118135830" expanded="true" signature="56:61" ph="..." />
-                <marker date="1544118135830" expanded="true" signature="149:284" ph="..." />
-                <marker date="1544118135830" expanded="true" signature="305:310" ph="..." />
-                <marker date="1544118135830" expanded="true" signature="384:389" ph="..." />
-                <marker date="1544118135830" expanded="true" signature="664:665" ph="..." />
-                <marker date="1544118135830" expanded="true" signature="821:826" ph="..." />
-                <marker date="1544118135830" expanded="true" signature="821:1012" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="56:61" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="149:284" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="305:310" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="392:397" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="672:673" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="833:838" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="833:1024" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="1360:1365" ph="..." />
+                <marker date="1544208032260" expanded="true" signature="1531:1560" ph="..." />
               </folding>
             </state>
           </provider>
@@ -197,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,6 +214,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Nicholas Oropeza - Lucky 7s">
+  <component name="RunManager" selected="Python.Nicholas Oropeza - Challenges">
     <configuration name="Basic Python Notes" type="PythonConfigurationType" factoryName="Python">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -404,8 +406,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Nicholas Oropeza - Lucky 7s" />
         <item itemvalue="Python.Nicholas Oropeza - Challenges" />
+        <item itemvalue="Python.Nicholas Oropeza - Lucky 7s" />
         <item itemvalue="Python.Fix It" />
         <item itemvalue="Python.Nicholas Oropeza - Hangman" />
         <item itemvalue="Python.List Notes" />
@@ -427,9 +429,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24130106" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -542,26 +543,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Challenges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <marker date="1544208032260" expanded="true" signature="56:61" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="149:284" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="305:310" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="392:397" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="672:673" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="833:838" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="833:1024" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="1360:1365" ph="..." />
+            <marker date="1544208032260" expanded="true" signature="1531:1560" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Challenges.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="75" column="63" selection-start-line="75" selection-start-column="63" selection-end-line="75" selection-end-column="63" />
-          <folding>
-            <marker date="1544118135830" expanded="true" signature="56:61" ph="..." />
-            <marker date="1544118135830" expanded="true" signature="149:284" ph="..." />
-            <marker date="1544118135830" expanded="true" signature="305:310" ph="..." />
-            <marker date="1544118135830" expanded="true" signature="384:389" ph="..." />
-            <marker date="1544118135830" expanded="true" signature="664:665" ph="..." />
-            <marker date="1544118135830" expanded="true" signature="821:826" ph="..." />
-            <marker date="1544118135830" expanded="true" signature="821:1012" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

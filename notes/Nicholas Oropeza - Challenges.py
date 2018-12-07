@@ -17,7 +17,7 @@ print(challenge2(-2))
 
 
 def challenge3(a, b):
-    return (a**2 + b**2)**(1/2)
+    return (a ** 2 + b ** 2) ** (1 / 2)
 
 
 print(challenge3(3, 4))
@@ -44,7 +44,7 @@ print(challenge5(2))
 
 
 def challenge6(radius):
-    return 4/3 * (3.14 * radius**3)
+    return 4 / 3 * (3.14 * radius ** 3)
 
 
 print(challenge6(2))
@@ -72,11 +72,27 @@ print(challenge8(1840))
 
 
 def challenge9(ch):
-    if (ch == 'A' or ch == 'a' or ch == 'E' or ch == 'e' or ch=='I'
-     or ch == 'i' or ch == 'O' or ch == 'o' or ch == 'U' or ch =='u'):
+    if (
+        ch == 'A' or ch == 'a' or ch == 'E' or ch == 'e' or ch == 'I'
+            or ch == 'i' or ch == 'O' or ch == 'o' or ch == 'U' or ch == 'u'):
         return "This letter is a vowel"
     else:
         return "This isn't a vowel"
 
 
 print(challenge9("b"))
+
+
+def challenge10(n):
+    if n == int(n):
+        return "This is a numeric string"
+    else:
+        return "This isn't a numeric string"
+
+
+print(challenge10("2"))
+
+
+def challenge11(systime):
+    if oof:
+        sdkfjkl
