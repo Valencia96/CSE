@@ -91,8 +91,3 @@ def challenge10(n):
 
 
 print(challenge10("2"))
-
-
-def challenge11(systime):
-    if oof:
-        sdkfjkl
