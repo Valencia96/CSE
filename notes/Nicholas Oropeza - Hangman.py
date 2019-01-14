@@ -1,14 +1,13 @@
 import random
-
-letters_guessed = []
-guesses = 8
 playing = True
-word_bank = ["katakana", "Japan", "Moscow", "block",
-             "No one expects the Spanish Inquisition.",
-             "mouse", "turquoise", "concatenation", "jukebox",
-             "Nintendo Switch", "artificial", "intelligence",
-             "How are you today?", "This is a sea urchin.",
-             "Super Mario Bros. 2, GOTY Since 1988."]
+guesses_left = 6
+guessed_letters = []
+# guess = input("Guess a letter")
+words = ["Germany", "North Korea", "South Korea",
+         "Japan", "Mexico", "Australia", "Canada"]
 
-word = random.choice(word_bank)
-print(word)
+for character in words:
+    if character == "u":
+        current_index = words.index(characters)
+        words.pop(current_index)
+        words.insert(current_index, "*")
