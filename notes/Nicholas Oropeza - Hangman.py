@@ -1,13 +1,26 @@
 import random
+letters_guessed = []
+guesses = 8
 playing = True
-guesses_left = 6
-guessed_letters = []
-# guess = input("Guess a letter")
-words = ["Germany", "North Korea", "South Korea",
-         "Japan", "Mexico", "Australia", "Canada"]
+word_bank = ["katakana", "Japan", "Moscow", "block",
+             "No one expects the Spanish Inquisition.",
+             "mouse", "turquoise", "concatenation", "jukebox",
+             "Nintendo Switch", "artificial", "intelligence",
+             "How are you today?", "This is a sea urchin.",
+             "Super Mario Bros. 2, GOTY Since 1988."]
 
-for character in words:
+test = "Uganda"
+pesto = list(test)
+"""
+for character in word:
     if character == "u":
-        current_index = words.index(characters)
-        words.pop(current_index)
-        words.insert(current_index, "*")
+        current_index = word.index(character)
+        word.pop(current_index)
+        word.insert(current_index, "*")
+"""
+
+for i in range(len(pesto)):  # i goes through all indices
+    if pesto[1] == "u":  # if we find a U
+        test_bank.pop(i)  # remove the i-th index
+        test_bank.insert(i, "_")  # Put a * there instead
+print(pesto)
