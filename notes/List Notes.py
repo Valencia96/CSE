@@ -112,7 +112,7 @@ for character in list1:
     if character == "u"
         current_index = list1.index(characters)
         list1.pop(current_index)
-        list1.insert(current_index, "*")
+        list1.insert(current_index, "_")
 '''
 # Turn a list into a string
 print("".join(list1))
