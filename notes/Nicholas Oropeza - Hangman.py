@@ -5,9 +5,6 @@ print(list(string.ascii_letters))
 print(string.digits)
 print(string.punctuation)
 """
-letters_guessed = []
-guesses = 8
-playing = True
 word_bank = ["katakana", "Japan", "Moscow", "block",
              "No one expects the Spanish Inquisition.",
              "mouse", "turquoise", "concatenation", "jukebox",
@@ -15,19 +12,20 @@ word_bank = ["katakana", "Japan", "Moscow", "block",
              "How are you today?", "This is a sea urchin.",
              "Super Mario Bros. 2, GOTY Since 1988."]
 
-# test = "Uganda"
 pesto = random.choice(word_bank)
+letters_guessed = []
+hidden_word = len(pesto)
+guesses = 8
+playing = True
 
-if guesses > 0:
-    """
+while guesses > 0 and playing:
     letter = input("Enter the letter or word")
     letters_guessed.append(letter)
     print(letters_guessed)
-    """
-    for character in pesto:
-        if character == string.ascii_letters:
-            current_index = pesto.index(character)
-            pesto.pop(current_index)
-            pesto.insert(current_index, "_")
+
+    for i in range(len(pesto)):  # i goes through all indices
+        if pesto[0] == string.ascii_letters:  # if we find a letter
+            pesto.pop(i)  # remove the i-th index
+            pesto.insert(i, "_")  # Put a _ there instead
+            print(pesto)
     guesses -= 1
-print(pesto)
