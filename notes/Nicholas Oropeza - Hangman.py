@@ -22,14 +22,21 @@ while guesses > 0 and playing:
     print(letters_guessed)
     
     for i in range(len(random_choice)):  # i goes through all indices
-        if random_choice == list(string.ascii_letters):  # if we find a letter
-            random_choice(i)  # remove the i-th index
-            random_choice.insert(i, "_")  # Put a _ there instead
-   
+        if random_choice[i] in list(string.ascii_letters):  # if we find a letter
+            letters_guessed.append(random_choice)
+        elif random_choice[i]:
+
+    print("".join(random_choice))
+
     if letter != random_choice:
         print("Wrong, try again")
         guesses -= 1
-    else:
-        print("Good guess")
+        print("You have %d guesses left" % guesses)
+        print()
+
+    if letter == random_choice:
+        print("You win!")
+        playing = False
+
     if guesses == 0:
-        print(random_choice)
+        print("The word was '%s'" % random_choice)
