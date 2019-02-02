@@ -8,14 +8,14 @@ word_bank = ["katakana", "Japan", "Moscow", "block",
              "How are you today?", "This is a sea urchin."]
 
 word = random.choice(word_bank)
-guessed = []
+letters_guessed = []
 blank = []
 guesses = 8
 playing = True
 
 print("Welcome to Hangman")
 print()
-print(word)
+print("Your word is a %d letter word" % len(word))
 for i in range(len(word)):
         if word[i] in list(string.ascii_letters):
             blank.append('_')
@@ -27,29 +27,23 @@ for i in range(len(word)):
             blank.append('.')
 
 while guesses > 0 and playing:
-    letter = input("Enter the letter or word")
-    guessed.append(letter)
-    print(guessed)
     print("".join(blank))
+    letter = input("Enter the letter or word")
 
-    for i in range(len(blank)):
-        if letter in list(blank):
-            blank.insert(i, letter)
-            print("".join(blank))
+    for i in range(len(word)):
+        if word.lower()[i] in letters_guessed:
+            blank[i] = word[i]
 
-    if letter.lower() in word:
-        blank.insert(i, letter)
-        print("".join(blank))
-        print("Correct")
-        print("You have %d guesses left." % guesses)
+    if letter.lower() in word.lower():
+        print("Good guess!")
+        letters_guessed.append(letter)
+        print(letters_guessed)
+    elif letter.lower() in letters_guessed:
+        print("You already guessed that letter")
     else:
         guesses -= 1
         print("Wrong")
         print("You have %d guesses left." % guesses)
-
-    if guessed == word:
-        print("You guessed right, good job.")
-        playing = False
 
     if letter == word:
         print("You guessed right, good job.")
@@ -57,8 +51,3 @@ while guesses > 0 and playing:
 
     if guesses == 0:
         print("The word/phrase was '%s'" % word)
-#     elif letter in list(string.ascii_uppercase) and word:
-#         blank.insert(i, letter)
-#         print("".join(blank))
-#         print("Correct")
-#         print("You have %d guesses left." % guesses)
