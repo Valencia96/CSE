@@ -20,7 +20,7 @@ world_map = {
         'DESCRIPTION': "Dark, Dank Tunnel but to the West. ",
         'PATHS': {
             'WEST': "END_W_TUNNEL",
-            'EAST': "W_TUNNEL"
+            'EAST': "TUNNEL"
         }
     },
     'END_W_TUNNEL': {
