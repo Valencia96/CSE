@@ -9,17 +9,23 @@ class Room(object):
         self.up = up
         self.down = down
 
-    closet = Room("Shaggy's Closet", "You're in the closet.")
+    closet = Room("Anton's Closet", "You're in the closet.")
+    anton_room = Room("Anton's Room", "There's something under his bed.")
     tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
     w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
+    skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
     end_tunnel = Room("The end of the tunnel.")
-    shaggy_room = Room("")
 
-    closet.west = shaggy_room
+    closet.west = anton_room
     tunnel.west = w_tunnel
-    tunnel.up = shaggy_room
+    tunnel.up = anton_room
     w_tunnel.west = end_tunnel
     w_tunnel.east = tunnel
+    end_tunnel.north = skele_cave
+    end_tunnel.east = w_tunnel
+    anton_room.east = closet
+    anton_room.down = tunnel
+    anton_room.north = marina_room
 
 
 """
