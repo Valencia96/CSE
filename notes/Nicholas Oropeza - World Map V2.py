@@ -58,21 +58,12 @@ world_map = {
 
         }
     },
-    'MARINA_BATH': {
-        'NAME': "Marina's restroom",
-        'DESCRIPTION': "You're in Marina's restroom. " 
-                       "Why are you in Marina's restroom?"
-                       "You have your own restroom.",
-        'PATHS': {
-            'WEST': "MARINA_ROOM"
-        }
-    },
-
     'STAIRS': {
         'NAME': "The Staircase",
         'DESCRIPTION': "You're at the staircase. "
                        "There's a room across the hall.",
         'PATHS': {
+            'EAST': "MARINA_ROOM",
             'WEST': "PLAYER_ROOM",
             "DOWN": "LIVING_ROOM"
         }
@@ -109,13 +100,6 @@ world_map = {
             'WEST': "BATHROOM",
             'EAST': "STAIRS"
         }
-    },
-    'BATHROOM': {
-        'NAME': "The Restroom.",
-        'DESCRIPTION': "You're in your own personal restroom. ",
-        'PATHS': {
-            'WEST': "PLAYER_ROOM",
-        },
     }
 }
 

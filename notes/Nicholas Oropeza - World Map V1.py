@@ -73,6 +73,7 @@ world_map = {
         'DESCRIPTION': "You're at the staircase. "
                        "There's a room across the hall.",
         'PATHS': {
+            'EAST': "MARINA_ROOM",
             'WEST': "PLAYER_ROOM",
             "DOWN": "LIVING_ROOM"
         }
