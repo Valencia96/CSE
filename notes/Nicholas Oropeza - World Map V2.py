@@ -54,7 +54,6 @@ world_map = {
         'PATHS': {
             'WEST': "STAIRS",
             'SOUTH': "SHAGGY_ROOM",
-            'EAST': "MARINA_BATH"
 
         }
     },

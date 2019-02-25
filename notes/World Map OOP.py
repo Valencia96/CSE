@@ -19,8 +19,11 @@ class Room(object):
     stairs = Room("The staircase",
                   "A staircase in between two rooms in the middle of the hallway.")
     a_room = Room("A room", "?")
-    living_room = ("The Living Room", "placeholder")
-
+    living_room = Room("The Living Room", "placeholder")
+    player_room = Room("Your Room", "The room is messy.")
+    kitchen = Room("The Kitchen")
+    b_room = Room("B room")
+    c_room = Room("C room")
 
     closet.west = anton_room
     anton_room.east = closet
@@ -29,8 +32,15 @@ class Room(object):
     jaiden_room.west = stairs
     jaiden_room.south = anton_room
     a_room.east = stairs
+    b_room.west = living_room
+    c_room.east = living_room
     stairs.east = jaiden_room
-    stairs.west = kitchen
+    stairs.west = player_room
+    stairs.down = living_room
+    living_room.up = stairs
+    living_room.north = kitchen
+    living_room.east = b_room
+    living_room.west = c_room
     tunnel.west = w_tunnel
     tunnel.up = anton_room
     w_tunnel.west = end_tunnel
