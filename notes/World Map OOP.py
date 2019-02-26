@@ -9,6 +9,28 @@ class Room(object):
         self.up = up
         self.down = down
 
+
+class Player(object):
+    def __init__(self, starting_location):
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        """ This moves the player to a new room
+
+        :param new_location: The room object of which you are going to.
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room
+        exists in that location.
+
+        :param direction: The direction that you want to move to
+        :return:   The Room object if it exists, or None if it does not
+        """
+        return getattr(self.current_location, direction)
+
     closet = Room("Anton's Closet", "You're in the closet.")
     anton_room = Room("Anton's Room", "There's something under his bed.")
     tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
@@ -21,9 +43,9 @@ class Room(object):
     a_room = Room("A room", "?")
     living_room = Room("The Living Room", "placeholder")
     player_room = Room("Your Room", "The room is messy.")
-    kitchen = Room("The Kitchen")
-    b_room = Room("B room")
-    c_room = Room("C room")
+    kitchen = Room("The Kitchen", "placeholder desc")
+    b_room = Room("B room", "placeholder desc")
+    c_room = Room("C room", "placeholder desc")
 
     closet.west = anton_room
     anton_room.east = closet
@@ -49,13 +71,22 @@ class Room(object):
     end_tunnel.east = w_tunnel
 
 
-"""
-# Option 1 - Define as we go
-    R19A = Room("Mr. Wiebe's Room")
-    parking_lot = Room("Parking Lot", None, R19A)
+player = Player(closet)
 
-    R19A.north = parking_lot
-# Option 2 - Set all at once, modify controller
-    R19A = Room("Mr. Wiebe's Room", 'parking_lot')
-    parking_lot = Room("Parking Lot", None, R19A)
-"""
+playing = True
+directions = ['north', 'south', 'east', 'west', 'up', 'down']
+
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.desc)
+    command = input(">_")
+    if command.lower in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in directions:
+        try:
+            next_room = player.find_next_room(command)
+            player.move(next_room)
+        except KeyError:
+            print("I can't go that way")
+    else:
+        print("Command Not Found")

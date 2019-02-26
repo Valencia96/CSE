@@ -1,0 +1,15 @@
+"""
+  Option 1 - Define as we go
+    R19A = Room("Mr. Wiebe's Room")
+    parking_lot = Room("Parking Lot", None, R19A)
+    
+    R19A.north = parking_lot
+    
+    return getattr(self.current_location, direction)
+  Option 2 - Set all at once, modify controller
+    R19A = Room("Mr. Wiebe's Room", 'parking_lot')
+    parking_lot = Room("Parking Lot", None, R19A)
+    
+    name_of_room = getattr(self.current_location, direction)
+    return globals()[name_of_room]
+"""
