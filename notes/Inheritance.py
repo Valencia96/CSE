@@ -37,14 +37,14 @@ class Impala(Car):
 
 
 class KeylessCar(Car):
-    def __init__(self):
+    def __init__(self, name, milage):
         super(KeylessCar, self).__init__(name, milage)
 
     def start_engine(self):
         print("You push the button and the car turns on.")
 
 
-wiebe_car = KeylessCar("Tesla, 125")
+wiebe_car = KeylessCar("Tesla", 125)
 
 jacob_car = Impala()
 jacob_car.start_engine()
