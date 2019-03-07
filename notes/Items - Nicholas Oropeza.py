@@ -25,34 +25,80 @@ class Armor(Item):
 
 
 class Food(Consumable):
-    def __init__(self, name, quantity, health_rec):
+    def __init__(self, name, quantity, health_rec, consumed=False):
         super(Item, self).__init__(name)
         self.quantity = quantity
         self.health_recovered = health_rec
+        self.consumed = consumed
 
 
 class Steak(Food):
-    def __init__(self, name, quantity, health_rec, consumed=False):
-        super(Steak, self).__init__(name, quantity, health_rec)
+    def __init__(self, name, consumed=False):
+        super(Steak, self).__init__(name, quantity, health_rec=10)
         self.consumed = consumed
-        self.health_rec = 10
-
-
-class LeatherHelmet(Armor):
-    def __init__(self, name, damage_absorb, durability, quantity):
-        super(LeatherHelmet, self).__init__(name)
+        self.health_rec = health_rec
         self.quantity = quantity
-        self.damage_absorb = 1
-        self.durability = 90
-        
-        
-class WoodenSword(Weapon):
-    def __init__(self, name):
-        super(WoodenSword, self).__init__(name)
-        self.damage_out = 2
-        self.durability = 60
 
 
-class LeatherChestplate(Armor):
+class BronzeHelmet(Armor):
+    def __init__(self, name, damage_absorb=3):
+        super(BronzeHelmet, self).__init__(name, quantity, durability=4)
+        self.quantity = quantity
+        self.damage_absorb = damage_absorb
+        self.durability = durability
+        
+
+class BronzeChestplate(Armor):
     def __init__(self, name):
-        super(LeatherChestplate, self).__init__(name)
+        super(BronzeChestplate, self).__init__(name, 3, 5)
+        self.quantity = quantity
+        self.damage_absorb = damage_absorb
+        self.durability = durability
+
+
+class BronzeLeggings(Armor):
+    def __init__(self, name):
+        super(BronzeLeggings, self).__init__(name, damage_absorb=5, durability=5)
+
+
+class BronzeBoots(Armor):
+    def __init__(self, name):
+        super(BronzeBoots, self).__init__(name, 3, 5)
+        self.quantity = quantity
+        self.damage_absorb = damage_absorb
+        self.durability = durability
+
+
+class EnergyHelmet(Armor):
+    def __init__(self, name):
+        super(EnergyHelmet, self).__init__(name, 15, 200)
+
+
+class EnergyChestplate(Armor):
+    def __init__(self, name):
+        super(EnergyChestplate, self).__init__(name, 20, 200)
+
+
+class EnergyLeggings(Armor):
+    def __init__(self, name):
+        super(EnergyLeggings, self).__init__(name, 10, 200)
+
+
+class EnergyBoots(Armor):
+    def __init__(self, name):
+        super(EnergyBoots, self).__init__(name, 15, 200)
+
+
+class EnergySword(Weapon):
+    def __init__(self, name):
+        super(EnergySword, self).__init__(name, damage_out=10, durability=10)
+        self.damage_out = damage_out
+        self.durability = durability
+
+
+class EnergyDualies(Weapon):
+    def __init__(self, name, ammo=15):
+        super(EnergyDualies, self).__init__(name, 20, 15, False)
+        self.ammo = ammo
+        self.damage_out = damage_out
+        self.durability = durability
