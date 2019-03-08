@@ -69,6 +69,12 @@ class BronzeBoots(Armor):
         self.durability = durability
 
 
+class EnergyStorage(Item):
+    def __init__(self, name, energy_storage):
+        super(EnergyStorage, self).__init__(name)
+        self.en_storage = energy_storage
+
+
 class EnergyHelmet(Armor):
     def __init__(self, name):
         super(EnergyHelmet, self).__init__(name, 15, 200)
@@ -97,8 +103,13 @@ class EnergySword(Weapon):
 
 
 class EnergyDualies(Weapon):
-    def __init__(self, name, ammo=15):
-        super(EnergyDualies, self).__init__(name, 20, 15, False)
-        self.ammo = ammo
-        self.damage_out = damage_out
-        self.durability = durability
+    def __init__(self, name):
+        super(EnergyDualies, self).__init__(name, 30, 1000, False)
+
+    def shoot(self):
+        self.ene
+
+
+class BronzeSword(Weapon):
+    def __init__(self, name):
+        super(BronzeSword, self).__init__(name, 5, 5)
