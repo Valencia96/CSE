@@ -10,18 +10,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Challenges.coverage" NAME="Nicholas Oropeza - Challenges Coverage Results" MODIFIED="1550079715026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1543856449654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551289295081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1552111348025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lucky_7s.coverage" NAME="Nicholas Oropeza - Lucky 7s Coverage Results" MODIFIED="1544205493772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Guess_Game.coverage" NAME="Nicholas Oropeza - Guess Game Coverage Results" MODIFIED="1543510762087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550250327066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551289295081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Fix_It.coverage" NAME="Fix It Coverage Results" MODIFIED="1543601906898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lawn_mower.coverage" NAME="Nicholas Oropeza - Lawn_mower Coverage Results" MODIFIED="1550252558405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza__Mad_Lib.coverage" NAME="Nicholas Oropeza- Mad Lib Coverage Results" MODIFIED="1541090552472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$List_Notes.coverage" NAME="List Notes Coverage Results" MODIFIED="1543510980836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Mad_Libs_2.coverage" NAME="Nicholas Oropeza - Mad Libs 2 Coverage Results" MODIFIED="1543426399825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Hangman.coverage" NAME="Nicholas Oropeza - Hangman Coverage Results" MODIFIED="1543601463101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Mad_Libs_2.coverage" NAME="Nicholas Oropeza - Mad Libs 2 Coverage Results" MODIFIED="1543426399825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Fix_It.coverage" NAME="Fix It Coverage Results" MODIFIED="1543601906898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551375239596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$List_Notes.coverage" NAME="List Notes Coverage Results" MODIFIED="1543510980836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza__Mad_Lib.coverage" NAME="Nicholas Oropeza- Mad Lib Coverage Results" MODIFIED="1541090552472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,6 +37,7 @@
     <expand />
     <select />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="-97402428">
       <usages-collector id="statistics.lifecycle.project">
@@ -85,11 +86,39 @@
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.56429654">
+=======
+  <component name="FileEditorManager">
+    <splitter split-orientation="vertical" split-proportion="0.22427036">
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Items - Nicholas Oropeza.py">
+            <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
               <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="40">
+                  <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/List Notes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="293">
+                  <caret line="109" selection-start-line="109" selection-end-line="109" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Dictionary Notes.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Object Notes.py">
+              <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="2060">
                   <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
                   <folding>
@@ -103,8 +132,17 @@
                     <marker date="1552067055737" expanded="true" signature="2210:2662" ph="..." />
                     <marker date="1552067055737" expanded="true" signature="3066:3071" ph="..." />
                   </folding>
+=======
+                <state relative-caret-position="306">
+                  <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Inheritance.py">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -112,8 +150,9 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Inheritance.py">
+            <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="120">
                   <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
                   <folding>
@@ -123,6 +162,10 @@
                     <marker date="1551464288736" expanded="true" signature="751:756" ph="..." />
                     <marker date="1551464288736" expanded="true" signature="851:1073" ph="..." />
                   </folding>
+=======
+                <state relative-caret-position="280">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
                 </state>
               </provider>
             </entry>
@@ -160,7 +203,6 @@
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Guess Game.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Hangman.py" />
         <option value="$PROJECT_DIR$/Fix It.py" />
-        <option value="$PROJECT_DIR$/Basic Python Notes.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Challenges.py" />
         <option value="$PROJECT_DIR$/Special_Random.py" />
@@ -170,20 +212,16 @@
         <option value="$PROJECT_DIR$/Nicholas Oropeza - Lawn_mower.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - World Map V1.py" />
         <option value="$PROJECT_DIR$/Nicholas Oropeza - World Map V2.py" />
-        <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Inheritance.py" />
         <option value="$PROJECT_DIR$/Items - Nicholas Oropeza.py" />
+        <option value="$PROJECT_DIR$/World Map OOP.py" />
+        <option value="$PROJECT_DIR$/Basic Python Notes.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="147" />
+    <option name="x" value="18" />
+    <option name="y" value="-8" />
     <option name="width" value="1367" />
     <option name="height" value="769" />
   </component>
@@ -192,13 +230,26 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Nicholas Oropeza - World Map V2.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -217,7 +268,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Inheritance">
+  <component name="RunManager" selected="Python.Basic Python Notes">
+    <configuration name="Basic Python Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic Python Notes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Inheritance" type="PythonConfigurationType" factoryName="Python">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,7 +361,13 @@
       <item itemvalue="Python.Inheritance" />
       <item itemvalue="Python.Object Notes" />
       <item itemvalue="Python.World Map OOP" />
+      <item itemvalue="Python.Basic Python Notes" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Basic Python Notes" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -302,17 +381,19 @@
       <updated>1540865735339</updated>
       <workItem from="1550286408515" duration="117000" />
       <workItem from="1550286717385" duration="209000" />
+      <workItem from="1551769038371" duration="1001000" />
+      <workItem from="1552111121165" duration="628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326000" />
+    <option name="totallyTimeSpent" value="1955000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,9 +444,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1313104862/builtins.py" />
     <entry file="file://$PROJECT_DIR$/venv/Nicholas Oropeza - Lucky 7s.py" />
@@ -399,20 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="148" column="3" lean-forward="true" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/List Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="109" column="3" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Nicholas Oropeza - Lucky 7s.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -424,13 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
           <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Special_Random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -456,22 +513,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Items - Nicholas Oropeza.py" />
     <entry file="file://$PROJECT_DIR$/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="20">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
+=======
+        <state relative-caret-position="443">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary Notes.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Semester 2 Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Special_Random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Object Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="306">
           <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Inheritance.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List Notes.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="120">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
@@ -481,11 +565,16 @@
             <marker date="1551464288736" expanded="true" signature="751:756" ph="..." />
             <marker date="1551464288736" expanded="true" signature="851:1073" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="293">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Items - Nicholas Oropeza.py">
+    <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2060">
           <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
           <folding>
@@ -499,6 +588,10 @@
             <marker date="1552067055737" expanded="true" signature="2210:2662" ph="..." />
             <marker date="1552067055737" expanded="true" signature="3066:3071" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="280">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
         </state>
       </provider>
     </entry>
