@@ -44,14 +44,14 @@ anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a dra
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
-end_tunnel = Room("The end of the tunnel.", "desc")
+end_tunnel = Room("The end of the tunnel.", "There is nothing beyond this point, go back.")
 jaiden_room = Room("Jaiden's Room", "An unkempt room.")
 stairs = Room("The staircase",
               "A staircase in between two rooms in the middle of the hallway.")
-a_room = Room("A room", "An empty room")
+a_room = Room("A room", "An empty room with a bed in it.")
 living_room = Room("The Living Room", "placeholder")
 player_room = Room("Your Room", "The room is messy.")
-kitchen = Room("The Kitchen", "placeholder desc")
+kitchen = Room("The Kitchen", "The place where you cook stuff.")
 b_room = Room("B room", "This room is empty.")
 c_room = Room("C room", "This room is empty")
 

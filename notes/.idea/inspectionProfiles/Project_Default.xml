@@ -4,7 +4,11 @@
     <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
+<<<<<<< HEAD
           <option value="W391" />
+=======
+          <option value="E402" />
+>>>>>>> parent of 3348e78... Revert "3/2/2019"
         </list>
       </option>
     </inspection_tool>
