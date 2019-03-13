@@ -125,7 +125,7 @@ class RegularGun(Weapon):
         super(RegularGun, self).__init__(name, 15, 500)
 
 
-class Characters(object):
+class Character(object):
     def __init__(self, name, starting_location):
         self.name = name
         self.current_location = starting_location
