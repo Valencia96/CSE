@@ -16,7 +16,7 @@ class Weapon(Item):
 
 
 class Armor(Item):
-    def __init__(self, name, damage_absorb):
+    def __init__(self, name, damage_absorb=0):
         super(Armor, self).__init__(name)
         self.damage_absorb = damage_absorb
 
@@ -85,22 +85,22 @@ class EnergyBoots(Armor):
 
 class EnergySword(Weapon):
     def __init__(self, name):
-        super(EnergySword, self).__init__(name, 10, None)
+        super(EnergySword, self).__init__(name, 10, False)
 
 
 class EnergyDualies(Weapon):
     def __init__(self, name):
-        super(EnergyDualies, self).__init__(name, 30, None)
+        super(EnergyDualies, self).__init__(name, 30, False)
 
 
 class BronzeSword(Weapon):
     def __init__(self, name):
-        super(BronzeSword, self).__init__(name, 5, None)
+        super(BronzeSword, self).__init__(name, 5, False)
 
 
 class RegularGun(Weapon):
     def __init__(self, name):
-        super(RegularGun, self).__init__(name, 15, None)
+        super(RegularGun, self).__init__(name, 15, False)
 
 
 class Character(object):
@@ -127,7 +127,7 @@ canoe = Weapon("Canoe", 42, None)
 wiebe_armor = Armor("Armor of the gods", 1000000000000000000)
 
 # Characters
-orc = Character("Orc1", 100, sword, BronzeChestplate)
+orc = Character("Orc1", 100, BronzeSword, wiebe_armor)
 orc2 = Character("Wiebe", 10000, canoe, wiebe_armor)
 
 orc.attack(orc2)
