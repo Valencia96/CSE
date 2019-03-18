@@ -94,8 +94,8 @@ class EnergyDualies(Weapon):
 
 
 class BronzeSword(Weapon):
-    def __init__(self, name):
-        super(BronzeSword, self).__init__(name, 5, False)
+    def __init__(self, name, damage_out, ammo):
+        super(BronzeSword, self).__init__(name, damage_out, ammo)
 
 
 class RegularGun(Weapon):
@@ -122,15 +122,14 @@ class Character(object):
         target.take_damage(self.weapon.damage_out)
 
 
-sword = Weapon("Sword", 10, None)
+sword = BronzeSword("Sword", 5, False)
 canoe = Weapon("Canoe", 42, None)
-wiebe_armor = Armor("Armor of the gods", 1000000000000000000)
+wiebe_armor = Armor("Armor of the gods", 4)
 
 # Characters
-orc = Character("Orc1", 100, BronzeSword, wiebe_armor)
+orc = Character("Orc1", 100, sword, wiebe_armor)
 orc2 = Character("Wiebe", 10000, canoe, wiebe_armor)
 
 orc.attack(orc2)
-orc2.attack(orc)
 orc2.attack(orc)
 orc2.attack(orc)
