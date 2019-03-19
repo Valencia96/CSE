@@ -1,5 +1,7 @@
 class Room(object):
-    def __init__(self, name, desc, north=None, south=None, east=None, west=None, up=None, down=None):
+    def __init__(self, name, desc, north=None, south=None, east=None, west=None, up=None, down=None, items=None):
+        if items is None:
+            items = []
         self.name = name
         self.desc = desc
         self.north = north
@@ -137,14 +139,13 @@ class Character(object):
 
 
 class Player(object):
-    def __init__(self, name, health: int, weapon, armor, starting_location):
+    def __init__(self, name, health: int, weapon, starting_location, armor):
+        self.name = name
+        self.armor = armor
         self.current_location = starting_location
         self.health = health
         self.weapon = weapon
         self.inventory = []
-
-    def battle_melee(self, weapon, target):
-        print("You attack %s for %d damage with your %s" % (self.weapon, target.name, self.weapon))
 
     def move(self, new_location):
         """ This moves the player to a new room
@@ -162,9 +163,13 @@ class Player(object):
         """
         return getattr(self.current_location, direction)
 
+    def battle_melee(self, target):
+        print("You attack %s for %d damage with your %s" % (self.weapon.damage_out, target.name, self.weapon))
+        target.take_damage(self.weapon.damage_out)
 
-closet = Room("Anton's Closet", "There are a lot of clothes in here")
-anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
+
+closet = Room("Anton's Closet", "It's surprisingly empty")
+anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.", items=[])
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
@@ -202,11 +207,14 @@ w_tunnel.east = tunnel
 end_tunnel.north = skele_cave
 end_tunnel.east = w_tunnel
 
-
-player = Player(closet, )
+p_name = input("What is your name?")
+player = Player(p_name, 100, None, closet, None)
+character1 = Character("Arthur", closet, 100, None, None)
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
+overworld_actions = ['pick up', '']
+battle_actions = ['attack', 'items', 'run']
 
 while playing:
     print(player.current_location.name)
