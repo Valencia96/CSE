@@ -31,91 +31,138 @@ class Weapon(Item):
 
 
 class Armor(Item):
-    def __init__(self, name, damage_absorb=0):
+    def __init__(self, name, quantity, damage_absorb):
         super(Armor, self).__init__(name)
-        self.damage_absorb = damage_absorb
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class Food(Consumable):
     def __init__(self, name, quantity, health_rec):
         super(Food, self).__init__(name)
+        self.name = name
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class Steak(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Steak, self).__init__(name, quantity, health_rec)
+        self.name = "Steak"
+        self.quantity = None
+        self.health_rec = 30
+
+
+class CookedRice(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(CookedRice, self).__init__(name, quantity, health_rec)
+        self.name = "Cooked Rice"
+        self.quantity = None
+        self.health_recovered = health_rec
+
+
+class Bread(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Bread, self).__init__(name, None, 10)
+        self.name = name
         self.quantity = quantity
         self.health_recovered = health_rec
 
 
-class Steak(Food):
-    def __init__(self, name, quantity=None):
-        super(Steak, self).__init__(name, quantity, 30)
-
-
-class CookedRice(Food):
-    def __init__(self, name):
-        super(CookedRice, self).__init__(name, None, 20)
-
-
-class Bread(Food):
-    def __init__(self, name):
-        super(Bread, self).__init__(name, None, 10)
-
-
 class BronzeHelmet(Armor):
-    def __init__(self, name):
-        super(BronzeHelmet, self).__init__(name, 7)
+    def __init__(self, name, quantity, damage_absorb):
+        super(BronzeHelmet, self).__init__(name, None, 7)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class BronzeChestplate(Armor):
-    def __init__(self, name):
-        super(BronzeChestplate, self).__init__(name, 10)
+    def __init__(self, name, quantity, damage_absorb):
+        super(BronzeChestplate, self).__init__(name, None, 10)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class BronzeLeggings(Armor):
-    def __init__(self, name):
-        super(BronzeLeggings, self).__init__(name, 5)
+    def __init__(self, name, quantity, damage_absorb):
+        super(BronzeLeggings, self).__init__(name, None, 5)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class BronzeBoots(Armor):
-    def __init__(self, name):
-        super(BronzeBoots, self).__init__(name, 7)
+    def __init__(self, name, quantity, damage_absorb):
+        super(BronzeBoots, self).__init__(name, None, 7)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class EnergyHelmet(Armor):
-    def __init__(self, name):
-        super(EnergyHelmet, self).__init__(name, 15)
+    def __init__(self, name, quantity, damage_absorb):
+        super(EnergyHelmet, self).__init__(name, None, 15)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class EnergyChestplate(Armor):
-    def __init__(self, name):
-        super(EnergyChestplate, self).__init__(name, 20)
+    def __init__(self, name, quantity, damage_absorb):
+        super(EnergyChestplate, self).__init__(name, None, 20)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class EnergyLeggings(Armor):
-    def __init__(self, name):
-        super(EnergyLeggings, self).__init__(name, 10)
+    def __init__(self, name, quantity, damage_absorb):
+        super(EnergyLeggings, self).__init__(name, None, 10)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class EnergyBoots(Armor):
-    def __init__(self, name):
-        super(EnergyBoots, self).__init__(name, 15)
+    def __init__(self, name, quantity, damage_absorb):
+        super(EnergyBoots, self).__init__(name, None, 15)
+        self.name = name
+        self.quantity = quantity
+        self.damage_absorbed = damage_absorb
 
 
 class EnergySword(Weapon):
-    def __init__(self, name):
+    def __init__(self, name, damage_out, ammo):
         super(EnergySword, self).__init__(name, 10, False)
+        self.name = name
+        self.damage_out = damage_out
+        self.ammo = ammo
 
 
 class EnergyDualies(Weapon):
-    def __init__(self, name):
-        super(EnergyDualies, self).__init__(name, 30, False)
+    def __init__(self, name, damage_out, ammo):
+        super(EnergyDualies, self).__init__(name, damage_out=30, ammo=False)
+        self.name = name
+        self.damage_out = damage_out
+        self.ammo = ammo
 
 
 class BronzeSword(Weapon):
-    def __init__(self, name):
-        super(BronzeSword, self).__init__(name, 5, False)
+    def __init__(self, name, damage_out, ammo):
+        super(BronzeSword, self).__init__(name, damage_out, ammo)
+        self.name = name
+        self.damage_out = damage_out
+        self.ammo = ammo
 
 
 class RegularGun(Weapon):
-    def __init__(self, name):
+    def __init__(self, name, damage_out, ammo):
         super(RegularGun, self).__init__(name, 15, False)
+        self.name = name
+        self.damage_out = damage_out
+        self.ammo = ammo
 
 
 class Character(object):
@@ -167,6 +214,9 @@ class Player(object):
         print("You attack %s for %d damage with your %s" % (self.weapon.damage_out, target.name, self.weapon))
         target.take_damage(self.weapon.damage_out)
 
+    def pick_up(self, target):
+        print("You picked up %s and put it in your inventory." % )
+
 
 closet = Room("Anton's Closet", "It's surprisingly empty")
 anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.", items=[])
@@ -213,7 +263,7 @@ character1 = Character("Arthur", closet, 100, None, None)
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-overworld_actions = ['pick up', '']
+overworld_actions = ['pick up', 'attack']
 battle_actions = ['attack', 'items', 'run']
 
 while playing:
@@ -233,5 +283,6 @@ while playing:
             print()
         except KeyError:
             print("I can't go that way")
+
     else:
         print("Command Not Found")

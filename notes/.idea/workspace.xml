@@ -14,8 +14,8 @@
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lucky_7s.coverage" NAME="Nicholas Oropeza - Lucky 7s Coverage Results" MODIFIED="1544205493772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Guess_Game.coverage" NAME="Nicholas Oropeza - Guess Game Coverage Results" MODIFIED="1543510762087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550250327066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Items___Nicholas_Oropeza.coverage" NAME="Items - Nicholas Oropeza Coverage Results" MODIFIED="1553012509956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1553012515556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Items___Nicholas_Oropeza.coverage" NAME="Items - Nicholas Oropeza Coverage Results" MODIFIED="1553099566474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1553097415754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Fix_It.coverage" NAME="Fix It Coverage Results" MODIFIED="1543601906898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza___Lawn_mower.coverage" NAME="Nicholas Oropeza - Lawn_mower Coverage Results" MODIFIED="1550252558405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Nicholas_Oropeza__Mad_Lib.coverage" NAME="Nicholas Oropeza- Mad Lib Coverage Results" MODIFIED="1541090552472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -42,7 +42,7 @@
     <session id="-97402428">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.105" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -51,6 +51,7 @@
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.39" value="1" />
@@ -63,7 +64,7 @@
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.66" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,40 +81,40 @@
         <counts>
           <entry key="" value="3" />
           <entry key="dummy" value="53" />
-          <entry key="py" value="10011" />
+          <entry key="py" value="10902" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="53" />
-          <entry key="Python" value="10014" />
+          <entry key="Python" value="10905" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.46369138">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Items - Nicholas Oropeza.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1448">
-                  <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
+                <state relative-caret-position="1302">
+                  <caret line="138" column="64" selection-start-line="138" selection-start-column="64" selection-end-line="138" selection-end-column="64" />
                   <folding>
-                    <marker date="1552925661072" expanded="true" signature="19:24" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="100:105" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="199:355" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="352:355" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="721:766" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="956:1041" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="1067:1072" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="1190:1195" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="1308:1502" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="1502:1504" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="1530:1962" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="2228:2233" ph="..." />
-                    <marker date="1552925661072" expanded="true" signature="2485:2490" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="19:24" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="100:105" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="199:355" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="352:355" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="789:841" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="1251:1459" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="1485:1490" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="1734:1739" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="1986:2345" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="2447:2450" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="2476:3444" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="3920:3925" ph="..." />
+                    <marker date="1553099774524" expanded="true" signature="4369:4374" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -131,7 +132,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/World Map OOP.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
+                <state relative-caret-position="260">
                   <caret line="13" selection-start-line="13" selection-end-line="13" />
                 </state>
               </provider>
@@ -144,8 +145,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/World Map OOP.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="146" column="28" lean-forward="true" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+                <state relative-caret-position="400">
+                  <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -242,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.World Map OOP">
+  <component name="RunManager" selected="Python.Items - Nicholas Oropeza">
     <configuration name="Inheritance" type="PythonConfigurationType" factoryName="Python">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,7 +266,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Items - Nicholas Oropeza" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Items - Nicholas Oropeza" type="PythonConfigurationType" factoryName="Python">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -337,11 +338,6 @@
       <item itemvalue="Python.World Map OOP" />
       <item itemvalue="Python.Items - Nicholas Oropeza" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Items - Nicholas Oropeza" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -519,28 +515,6 @@
     <entry file="file://$PROJECT_DIR$/Attack.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Items - Nicholas Oropeza.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1448">
-          <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
-          <folding>
-            <marker date="1552925661072" expanded="true" signature="19:24" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="100:105" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="199:355" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="352:355" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="721:766" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="956:1041" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="1067:1072" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="1190:1195" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="1308:1502" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="1502:1504" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="1530:1962" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="2228:2233" ph="..." />
-            <marker date="1552925661072" expanded="true" signature="2485:2490" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Object Notes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -548,10 +522,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Items - Nicholas Oropeza.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1302">
+          <caret line="138" column="64" selection-start-line="138" selection-start-column="64" selection-end-line="138" selection-end-column="64" />
+          <folding>
+            <marker date="1553099774524" expanded="true" signature="19:24" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="100:105" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="199:355" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="352:355" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="789:841" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="1251:1459" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="1485:1490" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="1734:1739" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="1986:2345" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="2447:2450" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="2476:3444" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="3920:3925" ph="..." />
+            <marker date="1553099774524" expanded="true" signature="4369:4374" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="146" column="28" lean-forward="true" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+        <state relative-caret-position="400">
+          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
         </state>
       </provider>
     </entry>
