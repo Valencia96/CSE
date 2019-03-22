@@ -18,134 +18,134 @@ class Weapon(Item):
 class Armor(Item):
     def __init__(self, name, quantity, damage_absorb):
         super(Armor, self).__init__(name)
-        self.name = name
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class Food(Consumable):
     def __init__(self, name, quantity, health_rec):
         super(Food, self).__init__(name)
+        self.name = name
         self.quantity = quantity
-        self.health_recovered = health_rec
+        self.health_rec = health_rec
 
 
 class Steak(Food):
     def __init__(self, name, quantity, health_rec):
-        super(Steak, self).__init__(name, None, 30)
-        self.name = name
-        self.quantity = quantity
-        self.health_recovered = health_rec
+        super(Steak, self).__init__(name, quantity, health_rec=30)
+        self.name = "Steak"
+        self.quantity = None
+        self.health_rec = health_rec
 
 
 class CookedRice(Food):
     def __init__(self, name, quantity, health_rec):
-        super(CookedRice, self).__init__(name, None, 20)
-        self.name = name
-        self.quantity = quantity
-        self.health_recovered = health_rec
+        super(CookedRice, self).__init__(name, quantity, health_rec=20)
+        self.name = "Cooked Rice"
+        self.quantity = None
+        self.health_rec = health_rec
 
 
 class Bread(Food):
     def __init__(self, name, quantity, health_rec):
-        super(Bread, self).__init__(name, None, 10)
-        self.name = name
+        super(Bread, self).__init__(name, quantity, health_rec=10)
+        self.name = "Bread"
         self.quantity = quantity
-        self.health_recovered = health_rec
+        self.health_rec = health_rec
 
 
 class BronzeHelmet(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(BronzeHelmet, self).__init__(name, None, 7)
-        self.name = name
+        super(BronzeHelmet, self).__init__(name, quantity, damage_absorb=7)
+        self.name = "Bronze Helmet"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class BronzeChestplate(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(BronzeChestplate, self).__init__(name, None, 10)
-        self.name = name
+        super(BronzeChestplate, self).__init__(name, quantity, damage_absorb=10)
+        self.name = "Bronze Chestplate"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class BronzeLeggings(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(BronzeLeggings, self).__init__(name, None, 5)
-        self.name = name
+        super(BronzeLeggings, self).__init__(name, quantity, damage_absorb=5)
+        self.name = "Bronze Leggings"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class BronzeBoots(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(BronzeBoots, self).__init__(name, None, 7)
-        self.name = name
+        super(BronzeBoots, self).__init__(name, quantity, damage_absorb=7)
+        self.name = "Bronze Boots"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class EnergyHelmet(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(EnergyHelmet, self).__init__(name, None, 15)
-        self.name = name
+        super(EnergyHelmet, self).__init__(name, quantity, damage_absorb=15)
+        self.name = "Energy Helmet"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class EnergyChestplate(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(EnergyChestplate, self).__init__(name, None, 20)
-        self.name = name
+        super(EnergyChestplate, self).__init__(name, quantity, damage_absorb=20)
+        self.name = "EnergyChestplate"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class EnergyLeggings(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(EnergyLeggings, self).__init__(name, None, 10)
-        self.name = name
+        super(EnergyLeggings, self).__init__(name, quantity, damage_absorb=10)
+        self.name = "Energy Leggings"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class EnergyBoots(Armor):
     def __init__(self, name, quantity, damage_absorb):
-        super(EnergyBoots, self).__init__(name, None, 15)
-        self.name = name
+        super(EnergyBoots, self).__init__(name, quantity, damage_absorb=15)
+        self.name = "Energy Boots"
         self.quantity = quantity
-        self.damage_absorbed = damage_absorb
+        self.damage_absorb = damage_absorb
 
 
 class EnergySword(Weapon):
     def __init__(self, name, damage_out, ammo):
-        super(EnergySword, self).__init__(name, 10, False)
-        self.name = name
+        super(EnergySword, self).__init__(name, damage_out=10, ammo=False)
+        self.name = "Energy Sword"
         self.damage_out = damage_out
         self.ammo = ammo
 
 
 class EnergyDualies(Weapon):
     def __init__(self, name, damage_out, ammo):
-        super(EnergyDualies, self).__init__(name, 30, False)
-        self.name = name
+        super(EnergyDualies, self).__init__(name, damage_out=30, ammo=False)
+        self.name = "Energy Dualies"
         self.damage_out = damage_out
         self.ammo = ammo
 
 
 class BronzeSword(Weapon):
     def __init__(self, name, damage_out, ammo):
-        super(BronzeSword, self).__init__(name, damage_out, ammo)
-        self.name = name
+        super(BronzeSword, self).__init__(name, damage_out=5, ammo=False)
+        self.name = "Bronze Sword"
         self.damage_out = damage_out
         self.ammo = ammo
 
 
 class RegularGun(Weapon):
     def __init__(self, name, damage_out, ammo):
-        super(RegularGun, self).__init__(name, 15, False)
-        self.name = name
+        super(RegularGun, self).__init__(name, damage_out=15, ammo=False)
+        self.name = "Regular Gun"
         self.damage_out = damage_out
         self.ammo = ammo
 
@@ -169,7 +169,7 @@ class Character(object):
         target.take_damage(self.weapon.damage_out)
 
 
-sword = BronzeSword("Sword", 5, False)
+sword = Weapon("Sword", 5, False)
 canoe = Weapon("Canoe", 42, None)
 wiebe_armor = Armor("Armor of the gods", 1, 4)
 
