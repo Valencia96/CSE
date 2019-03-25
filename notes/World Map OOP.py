@@ -1,5 +1,8 @@
 class Room(object):
-    def __init__(self, name, desc, north=None, south=None, east=None, west=None, up=None, down=None, items=None):
+    def __init__(self, name, desc, north=None, south=None, east=None, west=None, up=None, down=None, items=None,
+                 characters=None):
+        if characters is None:
+            characters = []
         if items is None:
             items = []
         self.name = name
@@ -11,7 +14,7 @@ class Room(object):
         self.up = up
         self.down = down
         self.items = items
-        self.characters = []
+        self.characters = characters
 
 
 class Item(object):
@@ -218,7 +221,8 @@ class Player(object):
         target.take_damage(self.weapon.damage_out)
 
 
-closet = Room("Anton's Closet", "It's surprisingly empty")
+closet = Room("Anton's Closet", "It's surprisingly empty, save for a container of rice and "
+                                "a person.")
 anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.", items=[])
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
@@ -233,6 +237,12 @@ player_room = Room("Your Room", "The room is messy.")
 kitchen = Room("The Kitchen", "The place where you cook stuff.")
 b_room = Room("B room", "This room is empty.")
 c_room = Room("C room", "This room is empty")
+
+player = Player("yikes", 100, None, closet, None, None)
+character1 = Character("Arthur", closet, 100, None, None)
+
+closet.items = [CookedRice]
+
 
 closet.west = anton_room
 anton_room.east = closet
@@ -257,13 +267,9 @@ w_tunnel.east = tunnel
 end_tunnel.north = skele_cave
 end_tunnel.east = w_tunnel
 
-p_name = input("What is your name?")
-player = Player(p_name, 100, None, closet, None, BronzeSword.name)
-character1 = Character("Arthur", closet, 100, None, None)
-
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-overworld_actions = ['inventory', 'attack']
+overworld_actions = ['inventory', 'attack', 'pick up']
 inventory_actions = ['equip', 'use', 'drop']
 battle_actions = ['attack', 'items', 'run']
 
