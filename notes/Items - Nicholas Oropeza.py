@@ -54,6 +54,54 @@ class Bread(Food):
         self.health_rec = health_rec
 
 
+class Potato(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Potato, self).__init__(name, quantity, health_rec=5)
+        self.name = "Uncooked Potato"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class CookedPotato(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(CookedPotato, self).__init__(name, quantity, health_rec=12)
+        self.name = "Cooked Potato"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class BakedPotato(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(BakedPotato, self).__init__(name, quantity, health_rec=15)
+        self.name = "Baked Potato"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class Beans(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Beans, self).__init__(name, quantity, health_rec=1)
+        self.name = "Uncooked Beans"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class BakedBeans(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(BakedBeans, self).__init__(name, quantity, health_rec=15)
+        self.name = "Baked Beans"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class Stew(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Stew, self).__init__(name, quantity, health_rec=20)
+        self.name = "Stew"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
 class BronzeHelmet(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(BronzeHelmet, self).__init__(name, quantity, damage_absorb=7)

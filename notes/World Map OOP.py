@@ -221,9 +221,13 @@ class Player(object):
         target.take_damage(self.weapon.damage_out)
 
 
+"""
+A00 = Room("A00, Central Station", "The promised land awaits!")
+A05 = Room("A05, Fake Plastic Station")
+"""
 closet = Room("Anton's Closet", "It's surprisingly empty, save for a container of rice and "
                                 "a person.")
-anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.", items=[])
+anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
@@ -240,6 +244,8 @@ c_room = Room("C room", "This room is empty")
 
 player = Player("yikes", 100, None, closet, None, None)
 character1 = Character("Arthur", closet, 100, None, None)
+character2 = Character("Placeholder", None, 10, None, None)
+character3 = Character("Placeholder", None, 10, None, None)
 
 closet.items = [CookedRice]
 
