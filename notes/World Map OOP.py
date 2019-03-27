@@ -73,6 +73,54 @@ class Bread(Food):
         self.health_rec = health_rec
 
 
+class Potato(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Potato, self).__init__(name, quantity, health_rec=5)
+        self.name = "Uncooked Potato"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class CookedPotato(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(CookedPotato, self).__init__(name, quantity, health_rec=12)
+        self.name = "Cooked Potato"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class BakedPotato(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(BakedPotato, self).__init__(name, quantity, health_rec=15)
+        self.name = "Baked Potato"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class Beans(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Beans, self).__init__(name, quantity, health_rec=1)
+        self.name = "Uncooked Beans"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class BakedBeans(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(BakedBeans, self).__init__(name, quantity, health_rec=15)
+        self.name = "Baked Beans"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
+class Stew(Food):
+    def __init__(self, name, quantity, health_rec):
+        super(Stew, self).__init__(name, quantity, health_rec=20)
+        self.name = "Stew"
+        self.quantity = quantity
+        self.health_rec = health_rec
+
+
 class BronzeHelmet(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(BronzeHelmet, self).__init__(name, quantity, damage_absorb=7)
@@ -222,12 +270,19 @@ class Player(object):
 
 
 """
+A01 = Room("G06/A01, Gnarly Rails Station","Ride the rails to the station.")
+A02 = Room("A02, Far-Out Station", "Carry the Rainmaker to the goal.")
+A03 = Room("B01/A03, Wassup 8-Ball Station", "Guide the 8-ball to the goal")
+A04 = Room("A04, Roll Out Station","Get to the goal in the Baller before time runs out!")
 A00 = Room("A00, Central Station", "The promised land awaits!")
-A05 = Room("A05, Fake Plastic Station")
+A05 = Room("A05, Fake Plastic Station", "Looks like the real thing...")
+A06 = Room("A06, Bounce with Me Station", "Get to the goal!")
+A07 = Room("A07, Maverick Station", "Get to the end!")
+A08 = Room("A08, Bumpin' 8-Ball Station", "Guide the 8-ball to the goal!")
 """
 closet = Room("Anton's Closet", "It's surprisingly empty, save for a container of rice and "
                                 "a person.")
-anton_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
+yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
@@ -247,15 +302,15 @@ character1 = Character("Arthur", closet, 100, None, None)
 character2 = Character("Placeholder", None, 10, None, None)
 character3 = Character("Placeholder", None, 10, None, None)
 
-closet.items = [CookedRice]
+closet.items = [BronzeChestplate, BronzeSword]
 
 
-closet.west = anton_room
-anton_room.east = closet
-anton_room.down = tunnel
-anton_room.north = jaiden_room
+closet.west = yikes_room
+yikes_room.east = closet
+yikes_room.down = tunnel
+yikes_room.north = jaiden_room
 jaiden_room.west = stairs
-jaiden_room.south = anton_room
+jaiden_room.south = yikes_room
 a_room.east = stairs
 b_room.west = living_room
 c_room.east = living_room
@@ -267,7 +322,7 @@ living_room.north = kitchen
 living_room.east = b_room
 living_room.west = c_room
 tunnel.west = w_tunnel
-tunnel.up = anton_room
+tunnel.up = yikes_room
 w_tunnel.west = end_tunnel
 w_tunnel.east = tunnel
 end_tunnel.north = skele_cave
@@ -296,17 +351,11 @@ while playing:
             print()
         except KeyError:
             print("I can't go that way")
-    elif command.lower() in battle_actions:
-        try:
-            if battle_actions[0]:
-                player.battle_melee(Character)
-            if player.weapon is None:
-                raise AttributeError
-            player.battle_melee(Character)
-        except AttributeError:
-            print("You don't have anything to attack with.")
     elif command.lower() in overworld_actions:
         if overworld_actions[0]:
             print(player.inventory)
+        try:
+            if overworld_actions[2]:
+                if Room.items=None:
     else:
         print("Command Not Found")
