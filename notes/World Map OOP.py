@@ -230,10 +230,10 @@ class Character(object):
             print("No damage is done because of some AMAZING armor.")
         else:
             self.health -= damage - self.armor.damage_absorb
-        print("%s has %d health left" % (self.name, self.health))
+        print("%s has %d health left." % (self.name, self.health))
 
     def attack(self, target):
-        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage_out))
+        print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage_out))
         target.take_damage(self.weapon.damage_out)
 
 
@@ -265,7 +265,7 @@ class Player(object):
         return getattr(self.current_location, direction)
 
     def battle_melee(self, target):
-        print("You attack %s for %d damage with your %s" % (self.weapon.damage_out, target.name, self.weapon))
+        print("You attack %s for %d damage with your %s." % (self.weapon.damage_out, target.name, self.weapon))
         target.take_damage(self.weapon.damage_out)
 
 
@@ -280,8 +280,7 @@ A06 = Room("A06, Bounce with Me Station", "Get to the goal!")
 A07 = Room("A07, Maverick Station", "Get to the end!")
 A08 = Room("A08, Bumpin' 8-Ball Station", "Guide the 8-ball to the goal!")
 """
-closet = Room("Anton's Closet", "It's surprisingly empty, save for a container of rice and "
-                                "a person.")
+closet = Room("Anton's Closet", "It's surprisingly empty, save for some items.", items=[BronzeSword, BronzeChestplate])
 yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
@@ -298,12 +297,8 @@ b_room = Room("B room", "This room is empty.")
 c_room = Room("C room", "This room is empty")
 
 player = Player("yikes", 100, None, closet, None, None)
-character1 = Character("Arthur", closet, 100, None, None)
+character1 = Character("Placeholder", None, 10, None, None)
 character2 = Character("Placeholder", None, 10, None, None)
-character3 = Character("Placeholder", None, 10, None, None)
-
-closet.items = [BronzeChestplate, BronzeSword]
-
 
 closet.west = yikes_room
 yikes_room.east = closet
@@ -354,8 +349,10 @@ while playing:
     elif command.lower() in overworld_actions:
         if overworld_actions[0]:
             print(player.inventory)
-        try:
-            if overworld_actions[2]:
-                if Room.items=None:
+        if overworld_actions[2]:
+            for item in player.current_location.items:
+                if item.name == item.name:
+                    print("You pick up the %s" % item.name)
+                    player.inventory.append(player.current_location.items)
     else:
         print("Command Not Found")
