@@ -135,6 +135,7 @@ class BronzeChestplate(Armor):
         self.name = "Bronze Chestplate"
         self.quantity = quantity
         self.damage_absorb = damage_absorb
+        self.name = name
 
 
 class BronzeLeggings(Armor):
@@ -280,8 +281,8 @@ A06 = Room("A06, Bounce with Me Station", "Get to the goal!")
 A07 = Room("A07, Maverick Station", "Get to the end!")
 A08 = Room("A08, Bumpin' 8-Ball Station", "Guide the 8-ball to the goal!")
 """
-closet = Room("Anton's Closet", "It's surprisingly empty, save for some items.", items=[BronzeSword, BronzeChestplate])
-yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
+closet = Room("Anton's Closet", "It's surprisingly empty, save for some items.")
+yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.", items=[BakedPotato, Bread])
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
@@ -299,6 +300,8 @@ c_room = Room("C room", "This room is empty")
 player = Player("yikes", 100, None, closet, None, None)
 character1 = Character("Placeholder", None, 10, None, None)
 character2 = Character("Placeholder", None, 10, None, None)
+
+closet.items = [BronzeChestplate]
 
 closet.west = yikes_room
 yikes_room.east = closet
@@ -325,7 +328,7 @@ end_tunnel.east = w_tunnel
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-overworld_actions = ['inventory', 'attack', 'pick up']
+overworld_actions = ['inventory', 'attack', 'pick up', 'scan']
 inventory_actions = ['equip', 'use', 'drop']
 battle_actions = ['attack', 'items', 'run']
 
@@ -354,5 +357,8 @@ while playing:
                 if item.name == item.name:
                     print("You pick up the %s" % item.name)
                     player.inventory.append(player.current_location.items)
+        if overworld_actions[3]:
+            for item in player.current_location.items:
+                print("There is a %s in here" % item.name)
     else:
         print("Command Not Found")
