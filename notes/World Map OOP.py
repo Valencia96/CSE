@@ -124,6 +124,7 @@ class Stew(Food):
 class BronzeHelmet(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(BronzeHelmet, self).__init__(name, quantity, damage_absorb=7)
+        self.name = name
         self.name = "Bronze Helmet"
         self.quantity = quantity
         self.damage_absorb = damage_absorb
@@ -132,15 +133,16 @@ class BronzeHelmet(Armor):
 class BronzeChestplate(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(BronzeChestplate, self).__init__(name, quantity, damage_absorb=10)
+        self.name = name
         self.name = "Bronze Chestplate"
         self.quantity = quantity
         self.damage_absorb = damage_absorb
-        self.name = name
 
 
 class BronzeLeggings(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(BronzeLeggings, self).__init__(name, quantity, damage_absorb=5)
+        self.name = name
         self.name = "Bronze Leggings"
         self.quantity = quantity
         self.damage_absorb = damage_absorb
@@ -149,6 +151,7 @@ class BronzeLeggings(Armor):
 class BronzeBoots(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(BronzeBoots, self).__init__(name, quantity, damage_absorb=7)
+        self.name = name
         self.name = "Bronze Boots"
         self.quantity = quantity
         self.damage_absorb = damage_absorb
@@ -205,6 +208,7 @@ class EnergyDualies(Weapon):
 class BronzeSword(Weapon):
     def __init__(self, name, damage_out, ammo):
         super(BronzeSword, self).__init__(name, damage_out=5, ammo=False)
+        self.name = name
         self.name = "Bronze Sword"
         self.damage_out = damage_out
         self.ammo = ammo
@@ -282,7 +286,7 @@ A07 = Room("A07, Maverick Station", "Get to the end!")
 A08 = Room("A08, Bumpin' 8-Ball Station", "Guide the 8-ball to the goal!")
 """
 closet = Room("Anton's Closet", "It's surprisingly empty, save for some items.")
-yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.", items=[BakedPotato, Bread])
+yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
@@ -301,7 +305,12 @@ player = Player("yikes", 100, None, closet, None, None)
 character1 = Character("Placeholder", None, 10, None, None)
 character2 = Character("Placeholder", None, 10, None, None)
 
-closet.items = [BronzeChestplate]
+sword = BronzeSword("Sword", 10, False)
+chestplate = BronzeChestplate(BronzeChestplate, 10, False)
+
+closet.items = [sword, chestplate]
+yikes_room.items = [BakedPotato, Bread]
+tunnel.characters = [character1]
 
 closet.west = yikes_room
 yikes_room.east = closet
@@ -357,6 +366,7 @@ while playing:
                 if item.name == item.name:
                     print("You pick up the %s" % item.name)
                     player.inventory.append(player.current_location.items)
+                    player.current_location.items.remove(item)
         if overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
