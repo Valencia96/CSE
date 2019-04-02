@@ -270,21 +270,16 @@ class Player(object):
         return getattr(self.current_location, direction)
 
     def battle_melee(self, target):
+        """
+
+        :param target: The target (your opponent(s))
+        :return:    The damage output of your weapon, the name of the target, the name of your weapon.
+                    How much damage your opponent(s) took.
+        """
         print("You attack %s for %d damage with your %s." % (self.weapon.damage_out, target.name, self.weapon))
         target.take_damage(self.weapon.damage_out)
 
 
-"""
-A01 = Room("G06/A01, Gnarly Rails Station","Ride the rails to the station.")
-A02 = Room("A02, Far-Out Station", "Carry the Rainmaker to the goal.")
-A03 = Room("B01/A03, Wassup 8-Ball Station", "Guide the 8-ball to the goal")
-A04 = Room("A04, Roll Out Station","Get to the goal in the Baller before time runs out!")
-A00 = Room("A00, Central Station", "The promised land awaits!")
-A05 = Room("A05, Fake Plastic Station", "Looks like the real thing...")
-A06 = Room("A06, Bounce with Me Station", "Get to the goal!")
-A07 = Room("A07, Maverick Station", "Get to the end!")
-A08 = Room("A08, Bumpin' 8-Ball Station", "Guide the 8-ball to the goal!")
-"""
 closet = Room("Anton's Closet", "It's surprisingly empty, save for some items.")
 yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
 tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
@@ -305,10 +300,7 @@ player = Player("yikes", 100, None, closet, None, None)
 character1 = Character("Placeholder", None, 10, None, None)
 character2 = Character("Placeholder", None, 10, None, None)
 
-sword = BronzeSword("Sword", 10, False)
-chestplate = BronzeChestplate(BronzeChestplate, 10, False)
-
-closet.items = [sword, chestplate]
+closet.items = [BronzeSword, BronzeChestplate]
 yikes_room.items = [BakedPotato, Bread]
 tunnel.characters = [character1]
 
@@ -338,8 +330,9 @@ end_tunnel.east = w_tunnel
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 overworld_actions = ['inventory', 'attack', 'pick up', 'scan']
-inventory_actions = ['equip', 'use', 'drop']
+inventory_actions = ['equip', 'key', 'drop']
 battle_actions = ['attack', 'items', 'run']
+cancel_commands = ['nvm', 'never mind']
 
 while playing:
     print(player.current_location.name)
@@ -361,14 +354,16 @@ while playing:
     elif command.lower() in overworld_actions:
         if overworld_actions[0]:
             print(player.inventory)
-        if overworld_actions[2]:
+        elif overworld_actions[2]:
             for item in player.current_location.items:
                 if item.name == item.name:
                     print("You pick up the %s" % item.name)
                     player.inventory.append(player.current_location.items)
                     player.current_location.items.remove(item)
-        if overworld_actions[3]:
+        elif overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
+            for characters in player.current_location.characters:
+                print("There are %d enemies in here." % characters.name)
     else:
         print("Command Not Found")
