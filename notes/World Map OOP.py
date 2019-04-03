@@ -332,13 +332,12 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 overworld_actions = ['inventory', 'attack', 'pick up', 'scan']
 inventory_actions = ['equip', 'key', 'drop']
 battle_actions = ['attack', 'items', 'run']
-cancel_commands = ['nvm', 'never mind']
 
 while playing:
     print(player.current_location.name)
     print(player.current_location.desc)
     command = input(">_")
-    if command.lower in ['q', 'quit', 'exit']:
+    if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in directions:
         try:
@@ -352,18 +351,17 @@ while playing:
         except KeyError:
             print("I can't go that way")
     elif command.lower() in overworld_actions:
+        if command.lower() in overworld_actions[2]:
+            phrase = input("What do you want to pick up?")
+            for item in player.current_location.items:
+                print("You pick up the %s" % item)
+                player.inventory.append(item)
         if overworld_actions[0]:
             print(player.inventory)
-        elif overworld_actions[2]:
-            for item in player.current_location.items:
-                if item.name == item.name:
-                    print("You pick up the %s" % item.name)
-                    player.inventory.append(player.current_location.items)
-                    player.current_location.items.remove(item)
-        elif overworld_actions[3]:
+        if overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
-            for characters in player.current_location.characters:
-                print("There are %d enemies in here." % characters.name)
+            for i in player.current_location.characters:
+                print("There are %d enemies in here." % player.current_location.characters[i])
     else:
         print("Command Not Found")
