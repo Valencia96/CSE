@@ -91,10 +91,10 @@ class CookedPotato(Food):
 
 class BakedPotato(Food):
     def __init__(self, name, quantity, health_rec):
-        super(BakedPotato, self).__init__(name, quantity, health_rec=15)
+        super(BakedPotato, self).__init__(name, quantity, health_rec)
         self.name = "Baked Potato"
         self.quantity = quantity
-        self.health_rec = health_rec
+        self.health_rec = 15
 
 
 class Beans(Food):
@@ -184,6 +184,7 @@ class EnergyLeggings(Armor):
 class EnergyBoots(Armor):
     def __init__(self, name, quantity, damage_absorb):
         super(EnergyBoots, self).__init__(name, quantity, damage_absorb=15)
+        self.name = name
         self.name = "Energy Boots"
         self.quantity = quantity
         self.damage_absorb = damage_absorb
@@ -192,6 +193,7 @@ class EnergyBoots(Armor):
 class EnergySword(Weapon):
     def __init__(self, name, damage_out, ammo):
         super(EnergySword, self).__init__(name, damage_out=10, ammo=False)
+        self.name = name
         self.name = "Energy Sword"
         self.damage_out = damage_out
         self.ammo = ammo
@@ -200,6 +202,7 @@ class EnergySword(Weapon):
 class EnergyDualies(Weapon):
     def __init__(self, name, damage_out, ammo):
         super(EnergyDualies, self).__init__(name, damage_out=30, ammo=False)
+        self.name = name
         self.name = "Energy Dualies"
         self.damage_out = damage_out
         self.ammo = ammo
@@ -217,14 +220,16 @@ class BronzeSword(Weapon):
 class RegularGun(Weapon):
     def __init__(self, name, damage_out, ammo):
         super(RegularGun, self).__init__(name, damage_out=15, ammo=False)
+        self.name = name
         self.name = "Regular Gun"
         self.damage_out = damage_out
         self.ammo = ammo
 
 
 class Character(object):
-    def __init__(self, name, starting_location, health: int, weapon, armor):
+    def __init__(self, name, starting_location, health: int, weapon, armor, enemy=False):
         self.name = name
+        self.enemy = enemy
         self.current_location = starting_location
         self.health = health
         self.weapon = weapon
@@ -286,7 +291,7 @@ tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
 w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
 skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
 end_tunnel = Room("The end of the tunnel.", "There is nothing beyond this point, go back.")
-jaiden_room = Room("Jaiden's Room", "An unkempt room.")
+jook_room = Room("Jook Room", "An unkempt room.")
 stairs = Room("The staircase",
               "A staircase in between two rooms in the middle of the hallway.")
 a_room = Room("A room", "An empty room with a bed in it.")
@@ -297,23 +302,29 @@ b_room = Room("B room", "This room is empty.")
 c_room = Room("C room", "This room is empty")
 
 player = Player("yikes", 100, None, closet, None, None)
-character1 = Character("Placeholder", None, 10, None, None)
-character2 = Character("Placeholder", None, 10, None, None)
+character1 = Character("Placeholder", None, 10, None, None, False)
+character2 = Character("Placeholder", None, 10, None, None, True)
 
-closet.items = [BronzeSword, BronzeChestplate]
-yikes_room.items = [BakedPotato, Bread]
+bronze_sword = BronzeSword("Bronze Sword", 5, False)
+bronze_chestplate = BronzeChestplate("Bronze Chestplate", 1, 10)
+baked_potato = BakedPotato("Baked Potato", 1, 15)
+bread = Bread
+
+closet.items = [baked_potato, bronze_chestplate]
+yikes_room.items = [baked_potato, bread]
+closet.characters = [character2]
 tunnel.characters = [character1]
 
 closet.west = yikes_room
 yikes_room.east = closet
 yikes_room.down = tunnel
-yikes_room.north = jaiden_room
-jaiden_room.west = stairs
-jaiden_room.south = yikes_room
+yikes_room.north = jook_room
+jook_room.west = stairs
+jook_room.south = yikes_room
 a_room.east = stairs
 b_room.west = living_room
 c_room.east = living_room
-stairs.east = jaiden_room
+stairs.east = jook_room
 stairs.west = player_room
 stairs.down = living_room
 living_room.up = stairs
@@ -354,14 +365,22 @@ while playing:
         if command.lower() in overworld_actions[2]:
             phrase = input("What do you want to pick up?")
             for item in player.current_location.items:
-                print("You pick up the %s" % item)
-                player.inventory.append(item)
-        if overworld_actions[0]:
+                if phrase == item.name:
+                    print("You pick up the %s" % item.name)
+                    player.inventory.append(item.name)
+                    player.current_location.items.remove(item)
+                else:
+                    print("That item isn't in this room/ doesn't exist.")
+        elif command.lower() in overworld_actions[0]:
             print(player.inventory)
-        if overworld_actions[3]:
+        elif command.lower() in overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
-            for i in player.current_location.characters:
-                print("There are %d enemies in here." % player.current_location.characters[i])
+                if item is None:
+                    print("There are no items here.")
+            for i in range(len(player.current_location.characters)):
+                print("There are %d enemies in here." % len(player.current_location.characters))
+                if i is None:
+                    print("There are no enemies in here.")
     else:
         print("Command Not Found")
