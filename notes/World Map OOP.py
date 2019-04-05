@@ -1,6 +1,8 @@
 class Room(object):
     def __init__(self, name, desc, north=None, south=None, east=None, west=None, up=None, down=None, items=None,
-                 characters=None):
+                 characters=None, enemies=None):
+        if enemies is None:
+            enemies = []
         if characters is None:
             characters = []
         if items is None:
@@ -227,9 +229,29 @@ class RegularGun(Weapon):
 
 
 class Character(object):
-    def __init__(self, name, starting_location, health: int, weapon, armor, enemy=False):
+    def __init__(self, name, starting_location, health: int, weapon, armor):
         self.name = name
-        self.enemy = enemy
+        self.current_location = starting_location
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage: int):
+        if self.armor.damage_absorb > damage:
+            print("No damage is done because of some AMAZING armor.")
+        else:
+            self.health -= damage - self.armor.damage_absorb
+        print("%s has %d health left." % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage." % (self.name, target.name, self.weapon.damage_out))
+        target.take_damage(self.weapon.damage_out)
+
+
+class Enemy(Character):
+    def __init__(self, name, starting_location, health: int, weapon, armor):
+        super(Enemy, self).__init__(name, starting_location, health, weapon, armor)
+        self.name = name
         self.current_location = starting_location
         self.health = health
         self.weapon = weapon
@@ -302,8 +324,8 @@ b_room = Room("B room", "This room is empty.")
 c_room = Room("C room", "This room is empty")
 
 player = Player("yikes", 100, None, closet, None, None)
-character1 = Character("Placeholder", None, 10, None, None, False)
-character2 = Character("Placeholder", None, 10, None, None, True)
+character1 = Character("Placeholder", None, 10, None, None)
+enemy1 = Enemy("Placeholder", None, 10, None, None)
 
 bronze_sword = BronzeSword("Bronze Sword", 5, False)
 bronze_chestplate = BronzeChestplate("Bronze Chestplate", 1, 10)
@@ -312,7 +334,7 @@ bread = Bread
 
 closet.items = [baked_potato, bronze_chestplate]
 yikes_room.items = [baked_potato, bread]
-closet.characters = [character2]
+closet.enemies = [enemy1]
 tunnel.characters = [character1]
 
 closet.west = yikes_room
@@ -379,7 +401,11 @@ while playing:
                 if item is None:
                     print("There are no items here.")
             for i in range(len(player.current_location.characters)):
-                print("There are %d enemies in here." % len(player.current_location.characters))
+                print("There are %d characters in here." % len(player.current_location.characters))
+                if i is None:
+                    print("There are no characters in here.")
+            for i in range(len(player.current_location.enemies)):
+                print("There are %d characters in here." % len(player.current_location.enemies))
                 if i is None:
                     print("There are no enemies in here.")
     else:
