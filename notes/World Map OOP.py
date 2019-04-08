@@ -296,7 +296,7 @@ class Player(object):
         """
         return getattr(self.current_location, direction)
 
-    def battle_melee(self, target):
+    def attack(self, target):
         """
 
         :param target: The target (your opponent(s))
@@ -395,6 +395,19 @@ while playing:
                     print("That item isn't in this room/ doesn't exist.")
         elif command.lower() in overworld_actions[0]:
             print(player.inventory)
+        elif command.lower() in overworld_actions[1]:
+                if len(player.current_location.enemies) >= 1:
+                    attack = input("Who do you want to attack?")
+                    try:
+                        for enemy in player.current_location.enemies:
+                            if attack == enemy.name:
+                                player.attack(enemy)
+                                if player.weapon is None:
+                                    raise AttributeError
+                                player.attack(enemy)
+                    except AttributeError:
+                        print("You have nothing to attack with.")
+                        enemy.attack(player)
         elif command.lower() in overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
@@ -405,7 +418,7 @@ while playing:
                 if i is None:
                     print("There are no characters in here.")
             for i in range(len(player.current_location.enemies)):
-                print("There are %d characters in here." % len(player.current_location.enemies))
+                print("There are %d enemies in here." % len(player.current_location.enemies))
                 if i is None:
                     print("There are no enemies in here.")
     else:
