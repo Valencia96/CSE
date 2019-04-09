@@ -17,6 +17,7 @@ class Room(object):
         self.down = down
         self.items = items
         self.characters = characters
+        self.enemies = enemies
 
 
 class Item(object):
@@ -303,7 +304,7 @@ class Player(object):
         :return:    The damage output of your weapon, the name of the target, the name of your weapon.
                     How much damage your opponent(s) took.
         """
-        print("You attack %s for %d damage with your %s." % (self.weapon.damage_out, target.name, self.weapon))
+        print("You attack %s for %d damage with your %s." % (target.name, self.weapon.damage_out, self.weapon))
         target.take_damage(self.weapon.damage_out)
 
 
@@ -397,17 +398,14 @@ while playing:
             print(player.inventory)
         elif command.lower() in overworld_actions[1]:
                 if len(player.current_location.enemies) >= 1:
-                    attack = input("Who do you want to attack?")
-                    try:
-                        for enemy in player.current_location.enemies:
-                            if attack == enemy.name:
-                                player.attack(enemy)
-                                if player.weapon is None:
-                                    raise AttributeError
-                                player.attack(enemy)
-                    except AttributeError:
-                        print("You have nothing to attack with.")
-                        enemy.attack(player)
+                    for enemy in player.current_location.enemies:
+                        print(enemy.name)
+                    attack = input("What do you want to attack?")
+                    if attack == enemy.name:
+                        if player.weapon is None:
+                            player.weapon =
+                        player.attack(enemy)
+
         elif command.lower() in overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
