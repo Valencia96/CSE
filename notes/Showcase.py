@@ -363,7 +363,6 @@ end_tunnel.east = w_tunnel
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 overworld_actions = ['inventory', 'attack', 'pick up', 'scan', 'drop']
 inventory_actions = ['equip', 'key', ]
 battle_actions = ['attack', 'items', 'run']
@@ -371,16 +370,9 @@ battle_actions = ['attack', 'items', 'run']
 while playing:
     print(player.current_location.name)
     print(player.current_location.desc)
-    
     command = input(">_")
-
-    if command.lower() in short_directions:
-        pos = short_directions.index(command.lower())
-        command = directions[pos]
-
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-
     elif command.lower() in directions:
         try:
             next_room = player.find_next_room(command)
