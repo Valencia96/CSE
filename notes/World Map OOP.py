@@ -67,7 +67,7 @@ class Steak(Food):
 
 class CookedRice(Food):
     def __init__(self, name, desc, quantity, health_rec):
-        super(CookedRice, self).__init__(name, desc,quantity, health_rec=20)
+        super(CookedRice, self).__init__(name, desc, quantity, health_rec=20)
         self.name = "Cooked Rice"
         self.quantity = None
         self.health_rec = health_rec
@@ -306,12 +306,13 @@ character1 = Character("Placeholder", None, 10, None, None)
 enemy1 = Enemy("Placeholder", None, 10, None, None)
 
 bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When equipped, does 5 damaged")
-bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of bronze. When equipped, absorbs 10 damage.", 1, 10)
+bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of bronze. Absorbs 10 damage.", 1, 10)
 baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
 bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
-guide = Item("Command Guide", "Welcome to _.")
+guide = Item("Command Guide", "Welcome to _. To move, type in the cardinal directions or type "
+                              "'n', 's', 'e', 'w', 'u', 'd' instead.")
 
-closet.items = [baked_potato, bronze_chestplate]
+closet.items = [baked_potato, bronze_chestplate, guide]
 yikes_room.items = [baked_potato, bread]
 closet.enemies = [enemy1]
 tunnel.characters = [character1]
@@ -343,7 +344,7 @@ playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 overworld_actions = ['inventory', 'attack', 'pick up', 'scan', 'drop']
-inventory_actions = ['equip', 'key', ]
+inventory_actions = ['equip', 'key']
 battle_actions = ['attack', 'items', 'run']
 
 while playing:
@@ -374,8 +375,14 @@ while playing:
             print()
         except KeyError:
             print("I can't go that way")
-    elif command.lower() in overworld_actions:
-        if command.lower() in overworld_actions[2]:
+
+        if command.lower() in overworld_actions[0]:
+            print(player.inventory)
+
+        elif command.lower() in overworld_actions[1]:
+
+
+        elif command.lower() in overworld_actions[2]:
             phrase = input("What do you want to pick up?")
             for item in player.current_location.items:
                 if phrase == item.name:
@@ -384,13 +391,11 @@ while playing:
                     player.current_location.items.remove(item)
                 else:
                     print("That item isn't in this room/ doesn't exist.")
-        elif command.lower() in overworld_actions[0]:
-            print(player.inventory)
 
         elif command.lower() in overworld_actions[3]:
             for item in player.current_location.items:
                 print("There is a %s in here" % item.name)
-                if item is None:
+                if item in player.current_location.items is None:
                     print("There are no items here.")
             for i in range(len(player.current_location.characters)):
                 print("There are %d characters in here." % len(player.current_location.characters))
@@ -401,15 +406,15 @@ while playing:
                 if i is None:
                     print("There are no enemies in here.")
 
-        elif command.lower() in overworld_actions:
-            if command.lower() in overworld_actions[4]:
-                phrase = input("What do you want to drop?")
-                for item in player.current_location.items:
-                    if phrase == item.name:
-                        print("You drop the %s" % item.name)
-                        player.inventory.remove(item.name)
-                        player.current_location.items.append(item)
-                    else:
-                        print("You don't have that item.")
+        elif command.lower() in overworld_actions[4]:
+            phrase = input("What do you want to drop?")
+            for item in player.current_location.items:
+                if phrase == item.name:
+                    print("You drop the %s" % item.name)
+                    player.inventory.remove(item.name)
+                    player.current_location.items.append(item)
+                else:
+                    print("You don't have that item.")
+
     else:
         print("Command Not Found")
