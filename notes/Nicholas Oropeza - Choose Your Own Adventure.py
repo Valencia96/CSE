@@ -309,10 +309,8 @@ bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When
 bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of bronze. Absorbs 10 damage.", 1, 10)
 baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
 bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
-guide = Item("Command Guide", "Welcome to _. To move, type in the cardinal directions or type "
-                              "'n', 's', 'e', 'w', 'u', 'd' instead.")
 
-closet.items = [baked_potato, bronze_chestplate, guide]
+closet.items = [baked_potato, bronze_chestplate]
 yikes_room.items = [baked_potato, bread]
 closet.enemies = [enemy1]
 tunnel.characters = [character1]
@@ -343,9 +341,10 @@ end_tunnel.east = w_tunnel
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
-overworld_actions = ['inventory', 'attack', 'pick up', 'scan', 'drop']
+overworld_actions = ['inventory', 'attack', 'pick up', 'scan', 'drop', 'help', 'h']
 inventory_actions = ['equip', 'key']
 battle_actions = ['attack', 'items', 'run']
+print("Type 'help' or 'h' for the commands.")
 
 while playing:
     print(player.current_location.name)
@@ -376,45 +375,49 @@ while playing:
         except KeyError:
             print("I can't go that way")
 
-        if command.lower() in overworld_actions[0]:
-            print(player.inventory)
+    if command.lower() in overworld_actions[0]:
+        print(player.inventory)
 
-        elif command.lower() in overworld_actions[1]:
+    elif command.lower() in overworld_actions[1]:
+        for enemy in player.current_location.enemies:
+            print(enemy)
+            p_target = input("Which enemy do you want to attack?")
+            if p_target == enemy.name:
+                player.attack(enemy)
 
+    elif command.lower() in overworld_actions[2]:
+        phrase = input("What do you want to pick up?")
+        for item in player.current_location.items:
+            if phrase == item.name:
+                print("You pick up the %s" % item.name)
+                player.inventory.append(item.name)
+                player.current_location.items.remove(item)
+            else:
+                print("That item isn't in this room/ doesn't exist.")
 
-        elif command.lower() in overworld_actions[2]:
-            phrase = input("What do you want to pick up?")
-            for item in player.current_location.items:
-                if phrase == item.name:
-                    print("You pick up the %s" % item.name)
-                    player.inventory.append(item.name)
-                    player.current_location.items.remove(item)
-                else:
-                    print("That item isn't in this room/ doesn't exist.")
+    elif command.lower() in overworld_actions[3]:
+        for item in player.current_location.items:
+            print("There is a %s in here" % item.name)
+            if item in player.current_location.items is None:
+                print("There are no items here.")
+        for i in range(len(player.current_location.characters)):
+            print("There are %d characters in here." % len(player.current_location.characters))
+            if i is None:
+                print("There are no characters in here.")
+        for i in range(len(player.current_location.enemies)):
+            print("There are %d enemies in here." % len(player.current_location.enemies))
+            if i is None:
+                print("There are no enemies in here.")
 
-        elif command.lower() in overworld_actions[3]:
-            for item in player.current_location.items:
-                print("There is a %s in here" % item.name)
-                if item in player.current_location.items is None:
-                    print("There are no items here.")
-            for i in range(len(player.current_location.characters)):
-                print("There are %d characters in here." % len(player.current_location.characters))
-                if i is None:
-                    print("There are no characters in here.")
-            for i in range(len(player.current_location.enemies)):
-                print("There are %d enemies in here." % len(player.current_location.enemies))
-                if i is None:
-                    print("There are no enemies in here.")
-
-        elif command.lower() in overworld_actions[4]:
-            phrase = input("What do you want to drop?")
-            for item in player.current_location.items:
-                if phrase == item.name:
-                    print("You drop the %s" % item.name)
-                    player.inventory.remove(item.name)
-                    player.current_location.items.append(item)
-                else:
-                    print("You don't have that item.")
+    elif command.lower() in overworld_actions[4]:
+        phrase = input("What do you want to drop?")
+        for item in player.current_location.items:
+            if phrase == item.name:
+                print("You drop the %s" % item.name)
+                player.inventory.remove(item.name)
+                player.current_location.items.append(item)
+            else:
+                print("You don't have that item.")
 
     else:
         print("Command Not Found")

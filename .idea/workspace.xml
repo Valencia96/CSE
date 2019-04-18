@@ -19,53 +19,15 @@
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1547487720180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550078519205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="90403202">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.56" value="1" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="2906" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="2906" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="7" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/notes/World Map OOP.py">
+            <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Choose Your Own Adventure.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="382" selection-start-line="382" selection-end-line="382" />
-                  <folding>
-                    <marker date="1555090699090" expanded="true" signature="4217:4493" ph="..." />
-                  </folding>
+                <state relative-caret-position="505">
+                  <caret line="421" column="8" selection-start-line="421" selection-end-line="421" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -73,8 +35,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/notes/Showcase.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="882">
-                  <caret line="416" selection-start-line="416" selection-end-line="416" />
+                <state>
+                  <caret line="415" column="34" selection-start-line="415" selection-start-column="34" selection-end-line="415" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -86,7 +48,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/notes/Showcase.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1591">
+                <state relative-caret-position="1471">
                   <caret line="416" selection-start-line="416" selection-end-line="416" />
                 </state>
               </provider>
@@ -127,16 +89,11 @@
         <option value="$PROJECT_DIR$/notes/Nicholas Oropeza -Game Map.py" />
         <option value="$PROJECT_DIR$/notes/Object Notes.py" />
         <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Dictionary World Map .py" />
-        <option value="$PROJECT_DIR$/notes/Showcase.py" />
         <option value="$PROJECT_DIR$/notes/World Map OOP.py" />
+        <option value="$PROJECT_DIR$/notes/Showcase.py" />
+        <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Choose Your Own Adventure.py" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
@@ -148,31 +105,16 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSE" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="settings.editor.splitter.proportion" value="0.24850895" />
   </component>
   <component name="RecentsManager">
@@ -195,7 +137,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.World Map OOP">
+  <component name="RunManager" selected="Python.Adventure.png">
+    <configuration name="Adventure.png" type="PythonConfigurationType" factoryName="Python">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/Nicholas Oropeza - Choose Your Own Adventure.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="List Notes" type="PythonConfigurationType" factoryName="Python">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -284,31 +248,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="World Map OOP" type="PythonConfigurationType" factoryName="Python">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/World Map OOP.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Showcase" />
-      <item itemvalue="Python.World Map OOP" />
+      <item itemvalue="Python.Adventure.png" />
       <item itemvalue="Python.Object Notes" />
       <item itemvalue="Python.Nicholas Oropeza - Hangman" />
       <item itemvalue="Python.List Notes" />
@@ -327,15 +269,16 @@
       <workItem from="1549069500586" duration="1228000" />
       <workItem from="1550283154577" duration="3228000" />
       <workItem from="1554685328158" duration="165000" />
+      <workItem from="1555123502216" duration="139000" />
+      <workItem from="1555610286500" duration="4673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4621000" />
+    <option name="totallyTimeSpent" value="9433000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49516907" weight="0.21104388" />
       <window_info id="Structure" order="1" sideWeight="0.5048309" side_tool="true" weight="0.28895614" />
@@ -386,8 +329,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="Adventure.png Coverage Results" MODIFIED="1555613658164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Showcase.coverage" NAME="Showcase Coverage Results" MODIFIED="1555613652848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/notes/Basic Python Notes.py">
@@ -460,18 +404,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/Showcase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="416" selection-start-line="416" selection-end-line="416" />
+        <state>
+          <caret line="415" column="34" selection-start-line="415" selection-start-column="34" selection-end-line="415" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/World Map OOP.py">
+    <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Choose Your Own Adventure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="382" selection-start-line="382" selection-end-line="382" />
-          <folding>
-            <marker date="1555090699090" expanded="true" signature="4217:4493" ph="..." />
-          </folding>
+        <state relative-caret-position="505">
+          <caret line="421" column="8" selection-start-line="421" selection-end-line="421" selection-end-column="8" />
         </state>
       </provider>
     </entry>
