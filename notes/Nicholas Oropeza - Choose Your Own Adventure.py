@@ -301,14 +301,16 @@ kitchen = Room("The Kitchen", "The place where you cook stuff.")
 b_room = Room("B room", "This room is empty.")
 c_room = Room("C room", "This room is empty")
 
-player = Player("yikes", 100, None, closet, None, None)
-character1 = Character("Placeholder", None, 10, None, None)
-enemy1 = Enemy("Placeholder", None, 10, None, None)
-
 bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When equipped, does 5 damaged")
+fists = BronzeSword("Fists", 1, None, "Your fists.")
 bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of bronze. Absorbs 10 damage.", 1, 10)
 baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
 bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
+
+player = Player("yikes", 100, fists, closet, None, inventory=[bread])
+character1 = Character("Placeholder", None, 10, None, None)
+enemy1 = Enemy("Placeholder", None, 10, bronze_sword, bronze_chestplate)
+
 
 closet.items = [baked_potato, bronze_chestplate]
 yikes_room.items = [baked_potato, bread]
@@ -341,9 +343,12 @@ end_tunnel.east = w_tunnel
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
-overworld_actions = ['inventory', 'attack', 'pick up', 'scan', 'drop', 'help', 'h']
+
+overworld_actions = ['inventory', 'attack', 'take', 'scan', 'drop', 'help']
 inventory_actions = ['equip', 'key']
-battle_actions = ['attack', 'items', 'run']
+short_actions = ['i', 'a', 't', 'sc', 'dr', 'h']
+
+
 print("Type 'help' or 'h' for the commands.")
 
 while playing:
@@ -359,6 +364,10 @@ while playing:
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions[pos]
+
+    if command.lower in short_actions:
+        act = short_directions.index(command.lower())
+        command = directions[act]
 
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -384,12 +393,13 @@ while playing:
             p_target = input("Which enemy do you want to attack?")
             if p_target == enemy.name:
                 player.attack(enemy)
+            input("What do you want to want to do next?")
 
     elif command.lower() in overworld_actions[2]:
-        phrase = input("What do you want to pick up?")
+        phrase = input("What do you want to take?")
         for item in player.current_location.items:
             if phrase == item.name:
-                print("You pick up the %s" % item.name)
+                print("You take the %s" % item.name)
                 player.inventory.append(item.name)
                 player.current_location.items.remove(item)
             else:
@@ -419,5 +429,9 @@ while playing:
             else:
                 print("You don't have that item.")
 
+    elif command.lower() in overworld_actions[5]:
+        print("Move by typing the cardinal directions. Check rooms by typing 'scan' or 'sc'"
+              "Pick up things by typing 'take' or 'ak'. 'Check your inventory by typing 'inventory' or 'i'"
+              "Attack by typing 'a'.")
     else:
         print("Command Not Found")
