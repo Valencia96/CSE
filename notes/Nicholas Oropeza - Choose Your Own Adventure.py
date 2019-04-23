@@ -365,11 +365,11 @@ while playing:
         pos = short_directions.index(command.lower())
         command = directions[pos]
 
-    if command.lower in short_actions:
+    elif command.lower in short_actions:
         act = short_directions.index(command.lower())
         command = directions[act]
 
-    if command.lower() in ['q', 'quit', 'exit']:
+    elif command.lower() in ['q', 'quit', 'exit']:
         playing = False
 
     elif command.lower() in directions:
@@ -384,18 +384,18 @@ while playing:
         except KeyError:
             print("I can't go that way")
 
-    if command.lower() in overworld_actions[0]:
+    elif command.lower() in overworld_actions[0]:  # inventory
         print(player.inventory)
 
-    elif command.lower() in overworld_actions[1]:
+    elif command.lower() in overworld_actions[1]:  # attack
         for enemy in player.current_location.enemies:
             print(enemy)
             p_target = input("Which enemy do you want to attack?")
             if p_target == enemy.name:
                 player.attack(enemy)
-            input("What do you want to want to do next?")
+            command = input("What do you want to want to do next?")
 
-    elif command.lower() in overworld_actions[2]:
+    elif command.lower() in overworld_actions[2]:  # take command
         phrase = input("What do you want to take?")
         for item in player.current_location.items:
             if phrase == item.name:
@@ -405,7 +405,7 @@ while playing:
             else:
                 print("That item isn't in this room/ doesn't exist.")
 
-    elif command.lower() in overworld_actions[3]:
+    elif command.lower() in overworld_actions[3]:  # scan
         for item in player.current_location.items:
             print("There is a %s in here" % item.name)
             if item in player.current_location.items is None:
@@ -419,7 +419,7 @@ while playing:
             if i is None:
                 print("There are no enemies in here.")
 
-    elif command.lower() in overworld_actions[4]:
+    elif command.lower() in overworld_actions[4]:  # drop
         phrase = input("What do you want to drop?")
         for item in player.current_location.items:
             if phrase == item.name:
@@ -429,7 +429,7 @@ while playing:
             else:
                 print("You don't have that item.")
 
-    elif command.lower() in overworld_actions[5]:
+    elif command.lower() in overworld_actions[5]:  # help
         print("Move by typing the cardinal directions. Check rooms by typing 'scan' or 'sc'"
               "Pick up things by typing 'take' or 'ak'. 'Check your inventory by typing 'inventory' or 'i'"
               "Attack by typing 'a'.")
