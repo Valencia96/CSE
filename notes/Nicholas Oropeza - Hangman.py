@@ -17,14 +17,14 @@ print("Welcome to Hangman")
 print()
 print("Your word is a %d letter word" % len(word))
 for i in range(len(word)):
-        if word[i] in list(string.ascii_letters):
-            blank.append('_')
-        elif word[i] == ' ':
-            blank.append(' ')
-        elif word[i] == '.':
-            blank.append('.')
-        elif word[i] == '.':
-            blank.append('.')
+    if word[i] in list(string.ascii_letters):
+        blank.append('_')
+    elif word[i] == ' ':
+        blank.append(' ')
+    elif word[i] == '.':
+        blank.append('.')
+    elif word[i] == '.':
+        blank.append('.')
 
 while guesses > 0 and playing:
     print("".join(blank))
