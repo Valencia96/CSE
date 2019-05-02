@@ -50,8 +50,8 @@ class Mower(object):
             print("You successfully mow the lawn.")
             print("You have %d liters of gas left" % self.gas)
         if self.oil < 0:
-                self.oil = 0
-                print("Your lawn mower runs out of oil before you finish mowing the lawn.")
+            self.oil = 0
+            print("Your lawn mower runs out of oil before you finish mowing the lawn.")
         elif self.oil == 0:
             print("You run out of oil right after you mow the lawn.")
         else:
