@@ -12,15 +12,15 @@ def multiply(num: str):
 
 def add_all(num: str):
     for index in range(len(num)):
-        int(num) + int(num)
+        sum(num)
     return num % 10
 
 
 def digits_16(num: str):
     if len(num) == 16:
-        return True
+        return False
     else:
-        print("This number is not 16 digits long.")
+        writer.writerow(row)
 
 
 def reverse_it(num: str):
@@ -29,19 +29,22 @@ def reverse_it(num: str):
 
 
 def validate(num: str):
+    digits_16(num)
     for index in range(len(num)):
         num = int(num[index])
         return num
     last_number.append(num[15])
-    if not digits_16(num):
-        return False
     reverse_it(num)
     multiply(num)
     add_all(num)
     if num != last_number:
-        print(num)
+        writer.writerow(row)
+    return False
 
 
+print(validate("9311368868957020"))
+
+"""
 with open("Book1.csv", 'r') as old_csv:
     with open("MyNewFile2.csv", 'w', newline='') as new_csv:
         writer = csv.writer(new_csv)
@@ -52,3 +55,4 @@ with open("Book1.csv", 'r') as old_csv:
             if validate(old_number):
                 writer.writerow(row)
 print("Done")
+"""
