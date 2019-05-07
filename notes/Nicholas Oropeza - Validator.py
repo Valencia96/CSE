@@ -1,4 +1,3 @@
-import csv
 last_number = []
 
 
@@ -20,7 +19,7 @@ def digits_16(num: str):
     if len(num) == 16:
         return False
     else:
-        writer.writerow(row)
+        print(num)
 
 
 def reverse_it(num: str):
@@ -38,21 +37,19 @@ def validate(num: str):
     multiply(num)
     add_all(num)
     if num != last_number:
-        writer.writerow(row)
+        print(num)
     return False
 
 
 print(validate("9311368868957020"))
 
-"""
-with open("Book1.csv", 'r') as old_csv:
-    with open("MyNewFile2.csv", 'w', newline='') as new_csv:
-        writer = csv.writer(new_csv)
-        reader = csv.reader(old_csv)
-        print("Processing...")
-        for row in reader:
-            old_number = row[0]
-            if validate(old_number):
-                writer.writerow(row)
-print("Done")
-"""
+# with open("Book1.csv", 'r') as old_csv:
+#     with open("MyNewFile2.csv", 'w', newline='') as new_csv:
+#         writer = csv.writer(new_csv)
+#         reader = csv.reader(old_csv)
+#         print("Processing...")
+#         for row in reader:
+#             old_number = row[0]
+#             if validate(old_number):
+#                 writer.writerow(row)
+# print("Done")
