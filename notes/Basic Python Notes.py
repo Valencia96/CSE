@@ -96,7 +96,7 @@ for i in range(5):  # This gives the numbers 0 through 4
     say_it()
 
 for i in range(8):
-        print(1 + 1)
+    print(1 + 1)
 
 for i in range(5):
     f(1)
