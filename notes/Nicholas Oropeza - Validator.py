@@ -19,7 +19,7 @@ def digits_16(num: str):
     if len(num) == 16:
         return False
     else:
-        print(num)
+        return num
 
 
 def reverse_it(num: str):
