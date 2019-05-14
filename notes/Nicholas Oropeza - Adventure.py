@@ -288,21 +288,10 @@ class Player(object):
         target.take_damage(self.weapon.damage_out)
 
 
-closet = Room("Anton's Closet", "A room with some clothes, shoes, and other stuff in it.")
-yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
-tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
-w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
-skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
-end_tunnel = Room("The end of the tunnel.", "There is nothing beyond this point, go back.")
-joke_room = Room("Joke Room", "An unkempt room.")
-stairs = Room("The staircase",
-              "A staircase in between two rooms in the middle of the hallway.")
-a_room = Room("A room", "An empty room with a bed in it.")
-living_room = Room("The Living Room", "placeholder")
-player_room = Room("Your Room", "The room is messy.")
-kitchen = Room("The Kitchen", "The place where you cook stuff.")
-b_room = Room("B room", "This room is empty.")
-c_room = Room("C room", "This room is empty")
+entrance = Room("The Entrance", "The Beginning of Everything. This room basically pure white, like snow.")
+first_enemy_room = Room("First Room of Enemies", "Your first trial. Attack and Defend")
+second_room = Room("The Second Room", "The First room, but with even more enemies.")
+boss1 = Room("The Boss Room", "")
 
 bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When equipped, does 5 damaged")
 fists = BronzeSword("Fists", 1, None, "Your fists.")
@@ -310,38 +299,14 @@ bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of br
 baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
 bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
 
-player = Player("yikes", 100, fists, closet, None, inventory=[bread])
+player = Player("yikes", 100, fists, entrance, None, bread)
 character1 = Character("Placeholder", None, 10, None, None)
 enemy1 = Enemy("Placeholder", None, 10, bronze_sword, bronze_chestplate)
 
 
-closet.items = [baked_potato, bronze_chestplate]
-yikes_room.items = [baked_potato, bread]
-closet.enemies = [enemy1]
-tunnel.characters = [character1]
+entrance.items = [baked_potato, bronze_chestplate]
 
-closet.west = yikes_room
-yikes_room.east = closet
-yikes_room.down = tunnel
-yikes_room.north = joke_room
-joke_room.west = stairs
-joke_room.south = yikes_room
-a_room.east = stairs
-b_room.west = living_room
-c_room.east = living_room
-stairs.east = joke_room
-stairs.west = player_room
-stairs.down = living_room
-living_room.up = stairs
-living_room.north = kitchen
-living_room.east = b_room
-living_room.west = c_room
-tunnel.west = w_tunnel
-tunnel.up = yikes_room
-w_tunnel.west = end_tunnel
-w_tunnel.east = tunnel
-end_tunnel.north = skele_cave
-end_tunnel.east = w_tunnel
+entrance.west = first_enemy_room
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']

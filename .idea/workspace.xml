@@ -24,10 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Sales Records.py">
+        <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Adventure.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="97" column="50" lean-forward="true" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+            <state relative-caret-position="301">
+              <caret line="293" column="31" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -51,6 +51,7 @@
       <find>Region</find>
       <find>snack</find>
       <find>Clothes</find>
+      <find>closet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -80,9 +81,9 @@
         <option value="$PROJECT_DIR$/notes/Basic Python Notes.py" />
         <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Fix It.py" />
         <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Sales Records_Test.py" />
-        <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Adventure.py" />
         <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Sales Records.py" />
         <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Validator.py" />
+        <option value="$PROJECT_DIR$/notes/Nicholas Oropeza - Adventure.py" />
       </list>
     </option>
   </component>
@@ -97,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,7 +124,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.24850895" />
   </component>
   <component name="RecentsManager">
@@ -385,17 +386,18 @@
       <workItem from="1557419305795" duration="1095000" />
       <workItem from="1557507018184" duration="2882000" />
       <workItem from="1557762505486" duration="3338000" />
+      <workItem from="1557797530086" duration="332000" />
+      <workItem from="1557798028428" duration="2567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49962000" />
+    <option name="totallyTimeSpent" value="52861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49516907" visible="true" weight="0.24093817" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49516907" visible="true" weight="0.24432677" />
       <window_info id="Structure" order="1" sideWeight="0.5048309" side_tool="true" weight="0.28895614" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -407,7 +409,7 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50680786" side_tool="true" weight="0.42903575" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50680786" side_tool="true" weight="0.42857143" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -423,15 +425,15 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CSE$Sales_Records.coverage" NAME="Sales Records Coverage Results" MODIFIED="1557765488372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="Adventure.png Coverage Results" MODIFIED="1555613658164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Testr.coverage" NAME="Sales Records Coverage Results" MODIFIED="1557333944610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Showcase.coverage" NAME="Showcase Coverage Results" MODIFIED="1555613652848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Nicholas_Oropeza___Sales_Records_Test.coverage" NAME="Nicholas Oropeza - Sales Records_Test Coverage Results" MODIFIED="1557509795000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$CSV_Notes.coverage" NAME="CSV Notes Coverage Results" MODIFIED="1557159625856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Nicholas_Oropeza___Testr.coverage" NAME="Testr Coverage Results" MODIFIED="1557247090795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="Adventure.png Coverage Results" MODIFIED="1555613658164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Nicholas_Oropeza___Sales_Records_Test.coverage" NAME="Nicholas Oropeza - Sales Records_Test Coverage Results" MODIFIED="1557509795000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Nicholas_Oropeza___Hangman.coverage" NAME="Nicholas Oropeza - Hangman Coverage Results" MODIFIED="1556641957933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Nicholas_Oropeza___Validator.coverage" NAME="Nicholas Oropeza - Validator Coverage Results" MODIFIED="1557247005520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Showcase.coverage" NAME="Showcase Coverage Results" MODIFIED="1555613652848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Validator.coverage" NAME="Validator Coverage Results" MODIFIED="1557765844809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Nicholas_Oropeza___Testr.coverage" NAME="Testr Coverage Results" MODIFIED="1557247090795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Mad Libs 2.py">
@@ -538,41 +540,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Sales Records.csv">
-      <provider selected="true" editor-type-id="csv-data-editor">
-        <state>
-          <format>
-            <csv-format name="Comma-separated (CSV)" id="Comma-separated (CSV)_id">
-              <data>
-                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="," recordSeparator="&#10;">
-                  <quotation>
-                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                  </quotation>
-                </record-format>
-              </data>
-            </csv-format>
-          </format>
-        </state>
-      </provider>
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="493">
-          <caret line="29" column="100" selection-start-line="29" selection-start-column="100" selection-end-line="29" selection-end-column="100" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Sales Records.csv" />
     <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Sales Records_Test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Adventure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -596,7 +568,17 @@
     <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Sales Records.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
-          <caret line="97" column="50" lean-forward="true" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/worldmap_oop_note.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Nicholas Oropeza - Adventure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="293" column="31" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
         </state>
       </provider>
     </entry>
