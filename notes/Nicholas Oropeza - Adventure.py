@@ -291,7 +291,7 @@ class Player(object):
 entrance = Room("The Entrance", "The Beginning of Everything. This room basically pure white, like snow.")
 first_enemy_room = Room("First Room of Enemies", "Your first trial. Attack and Defend")
 second_room = Room("The Second Room", "The First room, but with even more enemies.")
-boss1 = Room("The Boss Room", "")
+boss1 = Room("The Boss Room", "A giant room with a angry-looking, 12 foot minotaur. Good Luck.")
 
 bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When equipped, does 5 damaged")
 fists = BronzeSword("Fists", 1, None, "Your fists.")
@@ -299,11 +299,11 @@ bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of br
 baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
 bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
 
-player = Player("yikes", 100, fists, entrance, None, bread)
+player = Player("Joseph", 100, fists, entrance, None)
 character1 = Character("Placeholder", None, 10, None, None)
 enemy1 = Enemy("Placeholder", None, 10, bronze_sword, bronze_chestplate)
 
-
+player.inventory = [bread]
 entrance.items = [baked_potato, bronze_chestplate]
 
 entrance.west = first_enemy_room

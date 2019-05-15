@@ -17,53 +17,29 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("Processing...")
     for row in reader:
         if row[2] == 'Clothes':
-            profits = float(row[13])
-            for i in row[13]:
-                cloth_profit += profits
+            cloth_profit += float(row[13])
         elif row[2] == 'Fruits':
-            profits = float(row[13])
-            for i in row[13]:
-                fruit_profit += profits
+            fruit_profit += float(row[13])
         elif row[2] == 'Meat':
-            profits = float(row[13])
-            for i in row[13]:
-                meat_profit += profits
+            meat_profit += float(row[13])
         elif row[2] == 'Beverages':
-            profits = float(row[13])
-            for i in row[13]:
-                beverage_profit += profits
+            beverage_profit += float(row[13])
         elif row[2] == 'Office Supplies':
-            profits = float(row[13])
-            for i in row[13]:
-                office_profit += profits
+            office_profit += float(row[13])
         elif row[2] == 'Cosmetics':
-            profits = float(row[13])
-            for i in row[13]:
-                cosmetic_profit += profits
+            cosmetic_profit += float(row[13])
         elif row[2] == 'Snacks':
-            profits = float(row[13])
-            for i in row[13]:
-                snack_profit += profits
+            snack_profit += float(row[13])
         elif row[2] == 'Personal Care':
-            profits = float(row[13])
-            for i in row[13]:
-                care_profit += profits
+            care_profit += float(row[13])
         elif row[2] == 'Household':
-            profits = float(row[13])
-            for i in row[13]:
-                house_profit += profits
+            house_profit += float(row[13])
         elif row[2] == 'Vegetables':
-            profits = float(row[13])
-            for i in row[13]:
-                vegetable_profit += profits
+            vegetable_profit += float(row[13])
         elif row[2] == 'Baby Food':
-            profits = float(row[13])
-            for i in row[13]:
-                baby_profit += profits
+            baby_profit += float(row[13])
         elif row[2] == 'Cereal':
-            profits = float(row[13])
-            for i in row[13]:
-                cereal_profit += profits
+            cereal_profit += float(row[13])
 
 all_profits = [cloth_profit, fruit_profit, meat_profit, beverage_profit, office_profit, cosmetic_profit, snack_profit,
                care_profit, house_profit, vegetable_profit, baby_profit, cereal_profit]
