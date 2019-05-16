@@ -1,4 +1,24 @@
+# The Luhn Formula:
+#
+# Drop the last digit from the number. The last digit is what we want to check against
+# Reverse the numbers
+# Multiply the digits in odd positions (1, 3, 5, etc.) by 2 and subtract 9 to all any result higher than 9
+# Add all the numbers together
+# The check digit (the last number of the card) is the amount that you would need to add to get a multiple
+# of 10 (Modulo 10)
 last_number = []
+
+
+def digits_16(num: str):
+    if len(num) == 16:
+        return False
+    else:
+        return num
+
+
+def reverse_it(num: str):
+    reversed_list = list(num[::-1])
+    return reversed_list
 
 
 def multiply(num: str):
@@ -15,25 +35,13 @@ def add_all(num: str):
     return num % 10
 
 
-def digits_16(num: str):
-    if len(num) == 16:
-        return False
-    else:
-        return num
-
-
-def reverse_it(num: str):
-    reversed_list = list(num[::-1])
-    return reversed_list
-
-
 def validate(num: str):
+    last_number.append(num[15])
     digits_16(num)
+    reverse_it(num)
     for index in range(len(num)):
         num = int(num[index])
         return num
-    last_number.append(num[15])
-    reverse_it(num)
     multiply(num)
     add_all(num)
     if num != last_number:
@@ -42,7 +50,7 @@ def validate(num: str):
 
 
 print(validate("9311368868957020"))
-
+print(last_number)
 # with open("Book1.csv", 'r') as old_csv:
 #     with open("MyNewFile2.csv", 'w', newline='') as new_csv:
 #         writer = csv.writer(new_csv)
