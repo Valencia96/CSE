@@ -21,10 +21,13 @@ def reverse_it(num: str):
     return reversed_list
 
 
-def multiply(num: str):
+def divisible_by_2(num: str):
     num = int(num[0])
     if num % 2 == 0:
         return num * 2
+
+
+def modulo10(num: int):
     if num >= 10:
         return num - 9
 
@@ -32,17 +35,19 @@ def multiply(num: str):
 def add_all(num: str):
     for index in range(len(num)):
         sum(num)
-    return num % 10
+    modulo10(int(num))
 
 
 def validate(num: str):
     last_number.append(num[15])
     digits_16(num)
     reverse_it(num)
+    int(num) / 10
     for index in range(len(num)):
         num = int(num[index])
         return num
-    multiply(num)
+    divisible_by_2(num)
+
     add_all(num)
     if num != last_number:
         print(num)

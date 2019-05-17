@@ -18,6 +18,7 @@ with open("Sales Records.csv", 'r') as old_csv:
         elif row[0] == 'Australia and Oceania':
             australia += float(row[13])
         elif row[0] == 'Europe':
+
             europe += float(row[13])
         elif row[0] == 'Asia':
             asia += float(row[13])
