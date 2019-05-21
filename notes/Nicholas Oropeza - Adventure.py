@@ -288,33 +288,60 @@ class Player(object):
         target.take_damage(self.weapon.damage_out)
 
 
-entrance = Room("The Entrance", "The Beginning of Everything. This room basically pure white, like snow.")
-first_enemy_room = Room("First Room of Enemies", "Your first trial. Attack and Defend")
-second_room = Room("The Second Room", "The First room, but with even more enemies.")
-boss1 = Room("The Boss Room", "A giant room with a angry-looking, 12 foot minotaur. Good Luck.")
+tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
+w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
+skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
+end_tunnel = Room("The end of the tunnel.", "There is nothing beyond this point, go back.")
+stairs = Room("The staircase",
+              "A staircase in between two rooms in the middle of the hallway.")
+a_room = Room("A room", "An empty room with a bed in it.")
+living_room = Room("The Living Room", "placeholder")
+player_room = Room("Your Room", "The room is messy.")
+kitchen = Room("The Kitchen", "The place where you cook stuff.")
+b_room = Room("B room", "This room is empty.")
+c_room = Room("C room", "This room is empty")
 
-bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When equipped, does 5 damaged")
+bronze_sword = BronzeSword("Bronze Sword", 15, None, "A sword made of bronze.")
 fists = BronzeSword("Fists", 1, None, "Your fists.")
-bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of bronze. Absorbs 10 damage.", 1, 10)
-baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
-bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
+bronze_chestplate = BronzeChestplate("Bronze Chestplate", "A chestplate made of bronze.", 1, 10)
+baked_potato = BakedPotato("Baked Potato", "A delicious potato smothered in butter.", 1, 5)
+bread = Bread("Bread", "A loaf of bread that smells fresh from the oven.", 1, 10)
 
-player = Player("Joseph", 100, fists, entrance, None)
+player = Player("Kagero", 100, fists, tunnel, None)
 character1 = Character("Placeholder", None, 10, None, None)
-enemy1 = Enemy("Placeholder", None, 10, bronze_sword, bronze_chestplate)
+goblin = Enemy("Goblin", None, 10, bronze_sword, bronze_chestplate)
 
-player.inventory = [bread]
-entrance.items = [baked_potato, bronze_chestplate]
+player.inventory = []
+tunnel.items = [baked_potato, bronze_chestplate]
+w_tunnel.items = [baked_potato, bread]
+tunnel.enemies = [goblin]
+tunnel.characters = [character1]
 
-entrance.west = first_enemy_room
+tunnel.west = w_tunnel
+w_tunnel.east = tunnel
+a_room.east = stairs
+b_room.west = living_room
+c_room.east = living_room
+stairs.west = player_room
+stairs.down = living_room
+living_room.up = stairs
+living_room.north = kitchen
+living_room.east = b_room
+living_room.west = c_room
+tunnel.west = w_tunnel
+w_tunnel.west = end_tunnel
+w_tunnel.east = tunnel
+end_tunnel.north = skele_cave
+end_tunnel.east = w_tunnel
+
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 
 overworld_actions = ['inventory', 'attack', 'take', 'scan', 'drop', 'help']
-inventory_actions = ['equip', 'key']
-short_actions = ['i', 'a', 't', 'sc', 'dr', 'h']
+inventory_actions = ['equip', 'key', 'use']
+short_over_actions = ['i', 'a', 't', 'sc', 'dr', 'h']
 
 
 print("Type 'help' or 'h' for the commands.")
@@ -327,15 +354,18 @@ while playing:
         if item is None:
             print("There are no items here.")
 
+    # if player.current_location.enemies in player.current_location:
+    #     pass
+
     command = input(">_")
 
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions[pos]
 
-    elif command.lower in short_actions:
-        act = short_directions.index(command.lower())
-        command = directions[act]
+    elif command.lower in short_over_actions:
+        act = short_over_actions.index(command.lower())
+        command = overworld_actions[act]
 
     elif command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -354,17 +384,22 @@ while playing:
 
     elif command.lower() in overworld_actions[0]:  # inventory
         print(player.inventory)
+        command = input(">_ What now?")
+        if command.lower() == inventory_actions[2]:
+            command = input(">_ What item do you want to use?")
+            if command.lower() == Food:
+                pass
 
     elif command.lower() in overworld_actions[1]:  # attack
         for enemy in player.current_location.enemies:
             print(enemy)
-            p_target = input("Which enemy do you want to attack?")
+            p_target = input(">_ Which enemy do you want to attack?")
             if p_target == enemy.name:
                 player.attack(enemy)
-            command = input("What do you want to want to do next?")
+            command = input(">_ What do you want to want to do next?")
 
     elif command.lower() in overworld_actions[2]:  # take command
-        phrase = input("What do you want to take?")
+        phrase = input(">_ What do you want to take?")
         for item in player.current_location.items:
             if phrase == item.name:
                 print("You take the %s" % item.name)
@@ -388,7 +423,7 @@ while playing:
                 print("There are no enemies in here.")
 
     elif command.lower() in overworld_actions[4]:  # drop
-        phrase = input("What do you want to drop?")
+        phrase = input(">_ What do you want to drop?")
         for item in player.current_location.items:
             if phrase == item.name:
                 print("You drop the %s" % item.name)

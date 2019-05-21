@@ -47,11 +47,10 @@ def validate(num: str):
         num = int(num[index])
         return num
     divisible_by_2(num)
-
     add_all(num)
     if num != last_number:
         print(num)
-    return False
+    return num
 
 
 print(validate("9311368868957020"))
