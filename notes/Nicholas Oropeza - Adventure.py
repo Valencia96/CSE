@@ -336,6 +336,7 @@ end_tunnel.east = w_tunnel
 
 
 playing = True
+
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
 
@@ -346,18 +347,29 @@ short_over_actions = ['i', 'a', 't', 'sc', 'dr', 'h']
 
 print("Type 'help' or 'h' for the commands.")
 
-while playing:
+while playing is True:
+    print("You awaken in a tunnel, with no memories other than you were struck down.")
+
+    print()
     print(player.current_location.name)
     print(player.current_location.desc)
+    print()
+
     for item in player.current_location.items:
         print("There is a %s in here" % item.name)
         if item is None:
             print("There are no items here.")
 
-    # if player.current_location.enemies in player.current_location:
-    #     pass
-
     command = input(">_")
+
+    for player.current_location.enemies in player.current_location:
+        player.current_location.enemies.attack(player)
+
+    if player.health == 0:
+        playing = False
+        print("You died. "
+              "To retry, press the play button again." 
+              "Your progress has not been saved.")
 
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
@@ -384,7 +396,6 @@ while playing:
 
     elif command.lower() in overworld_actions[0]:  # inventory
         print(player.inventory)
-        command = input(">_ What now?")
         if command.lower() == inventory_actions[2]:
             command = input(">_ What item do you want to use?")
             if command.lower() == Food:
