@@ -1,6 +1,9 @@
+# Note, not final submission/ product
+
+
 class Room(object):
-    def __init__(self, name, desc, north=None, south=None, east=None, west=None, up=None, down=None, items=None,
-                 characters=None, enemies=None):
+    def __init__(self, name, desc, extra, north=None, south=None, east=None, west=None, up=None, down=None, items=None,
+                 characters=None, enemies=None, ):
         if enemies is None:
             enemies = []
         if characters is None:
@@ -18,6 +21,7 @@ class Room(object):
         self.items = items
         self.characters = characters
         self.enemies = enemies
+        self.extra = extra
 
 
 class Item(object):
@@ -156,6 +160,15 @@ class BronzeHelmet(Armor):
         self.description = desc
 
 
+class Fist(Weapon):
+    def __init__(self, name, damage_out, ammo, desc):
+        super(Fist, self).__init__(name, desc, damage_out=1, ammo=False)
+        self.name = name
+        self.damage_out = damage_out
+        self.ammo = ammo
+        self.description = desc
+
+
 class BronzeChestplate(Armor):
     def __init__(self, name, desc, quantity, damage_absorb):
         super(BronzeChestplate, self).__init__(name, desc, quantity, damage_absorb=10)
@@ -227,17 +240,19 @@ class Character(object):
 
 
 class Enemy(Character):
-    def __init__(self, name, starting_location, health: int, weapon, armor):
+    def __init__(self, name, starting_location, health: int, weapon, armor, attack_counter: int):
         super(Enemy, self).__init__(name, starting_location, health, weapon, armor)
         self.name = name
         self.current_location = starting_location
         self.health = health
         self.weapon = weapon
         self.armor = armor
+        self.attack_counter = attack_counter
 
     def take_damage(self, damage: int):
         if self.armor.damage_absorb > damage:
-            print("No damage is done because of some AMAZING armor.")
+            self.health -= 1
+            print("One point of damage has been dealt.")
         else:
             self.health -= damage - self.armor.damage_absorb
         print("%s has %d health left." % (self.name, self.health))
@@ -274,82 +289,81 @@ class Player(object):
         """
         return getattr(self.current_location, direction)
 
+    def take_damage(self, damage: int):
+        if self.armor.damage_absorb > damage:
+            self.health -= 1
+            print("One point of damage has been dealt to you.")
+        else:
+            self.health -= damage - self.armor.damage_absorb
+        print("%s has %d health left." % (self.name, self.health))
+
     def attack(self, target):
         """
-
         :param target: The target (your opponent(s))
         :return:    The damage output of your weapon, the name of the target, the name of your weapon.
                     How much damage your opponent(s) took.
         """
-        print("You attack %s for %d damage with your %s." % (target.name, self.weapon.damage_out, self.weapon))
+        print("You attack %s for %d damage with your %s." % (target.name, self.weapon.damage_out, self.weapon.name))
         target.take_damage(self.weapon.damage_out)
 
 
-closet = Room("Anton's Closet", "A room with some clothes, shoes, and other stuff in it.")
-yikes_room = Room("Anton's Room", "A room that contains a bed, a desk, and a drawer.")
-tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel")
-w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West")
-skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.")
-end_tunnel = Room("The end of the tunnel.", "There is nothing beyond this point, go back.")
-joke_room = Room("Joke Room", "An unkempt room.")
-stairs = Room("The staircase",
-              "A staircase in between two rooms in the middle of the hallway.")
-a_room = Room("A room", "An empty room with a bed in it.")
-living_room = Room("The Living Room", "placeholder")
-player_room = Room("Your Room", "The room is messy.")
-kitchen = Room("The Kitchen", "The place where you cook stuff.")
-b_room = Room("B room", "This room is empty.")
-c_room = Room("C room", "This room is empty")
+tunnel = Room("Dark Tunnel", "Dark, Dank Tunnel", None)
+w_tunnel = Room("West Tunnel", "Dark, Dank Tunnel, but to the West", "You hear a faint humming.")
+skele_cave = Room("The Skeleton Cave", "There are at least 100 skeletons in here.", "The humming has gotten louder.")
+end_tunnel = Room("The end of the tunnel.", "There is nothing beyond this point, go back.", None)
+a_room = Room("A room", "An empty room with a bed in it.", None)
+b_room = Room("B room", "This room is empty.", None)
+c_room = Room("C room", "This room is empty", None)
 
-player = Player("yikes", 100, None, closet, None, None)
-character1 = Character("Placeholder", None, 10, None, None)
-enemy1 = Enemy("Placeholder", None, 10, None, None)
+bronze_sword = BronzeSword("Bronze Sword", 15, None, "A sword made of bronze.")
+fists = Fist("Fists", 1, None, "Your fists.")
+clothes = BronzeChestplate("Clothes", "The clothes that you have on your body.", 1, 2)
+bronze_chestplate = BronzeChestplate("Bronze Chestplate", "A chestplate made of bronze.", 1, 10)
+baked_potato = BakedPotato("Baked Potato", "A delicious potato smothered in butter.", 1, 5)
+bread = Bread("Bread", "A loaf of bread that smells fresh from the oven.", 1, 10)
 
-bronze_sword = BronzeSword("Bronze Sword", 5, False, "Sword made of bronze. When equipped, does 5 damaged")
-bronze_chestplate = BronzeChestplate("Bronze Chestplate", "Chestplate made of bronze. Absorbs 10 damage.", 1, 10)
-baked_potato = BakedPotato("Baked Potato", "A Baked Potato. Restores 15 health", 1, 15)
-bread = Bread("Bread", "A loaf of bread. Restores 10 health.", 1, 10)
-guide = Item("Command Guide", "Welcome to _. To move, type in the cardinal directions or type "
-                              "'n', 's', 'e', 'w', 'u', 'd' instead.")
+player = Player("Kagero", 100, fists, tunnel, clothes)
+goblin = Enemy("Goblin", None, 10, bronze_sword, bronze_chestplate, attack_counter=0)
 
-closet.items = [baked_potato, bronze_chestplate, guide]
-yikes_room.items = [baked_potato, bread]
-closet.enemies = [enemy1]
-tunnel.characters = [character1]
+player.inventory = []
+tunnel.items = [baked_potato, bronze_chestplate]
+w_tunnel.items = [baked_potato, bread]
+tunnel.enemies = [goblin]
 
-closet.west = yikes_room
-yikes_room.east = closet
-yikes_room.down = tunnel
-yikes_room.north = joke_room
-joke_room.west = stairs
-joke_room.south = yikes_room
-a_room.east = stairs
-b_room.west = living_room
-c_room.east = living_room
-stairs.east = joke_room
-stairs.west = player_room
-stairs.down = living_room
-living_room.up = stairs
-living_room.north = kitchen
-living_room.east = b_room
-living_room.west = c_room
 tunnel.west = w_tunnel
-tunnel.up = yikes_room
+w_tunnel.east = tunnel
+# a_room.east = stairs
+# b_room.west = living_room
+# c_room.east = living_room
+# stairs.west = player_room
+# stairs.down = living_room
+# living_room.up = stairs
+# living_room.north = kitchen
+# living_room.east = b_room
+# living_room.west = c_room
+tunnel.west = w_tunnel
 w_tunnel.west = end_tunnel
 w_tunnel.east = tunnel
 end_tunnel.north = skele_cave
 end_tunnel.east = w_tunnel
 
 playing = True
+
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
-overworld_actions = ['inventory', 'attack', 'pick up', 'scan', 'drop']
-inventory_actions = ['equip', 'key']
-battle_actions = ['attack', 'items', 'run']
 
-while playing:
+overworld_actions = ['inventory', 'attack', 'take', 'scan', 'drop', 'help']
+inventory_actions = ['equip', 'key', 'use']
+short_over_actions = ['i', 'a', 't', 'sc', 'dr', 'h']
+
+print("Type 'help' or 'h' for the commands.")
+print("You awaken in a tunnel, with no memories other than you were struck down.")
+while playing is True:
+    print()
     print(player.current_location.name)
     print(player.current_location.desc)
+    print()
+
     for item in player.current_location.items:
         print("There is a %s in here" % item.name)
         if item is None:
@@ -357,11 +371,24 @@ while playing:
 
     command = input(">_")
 
+    for enemy in player.current_location.enemies:
+        enemy.attack(player)
+
+    if player.health <= 0:
+        playing = False
+        print("You died. "
+              "To retry, press the play button again. "
+              "Your progress has not been saved.")
+
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
         command = directions[pos]
 
-    if command.lower() in ['q', 'quit', 'exit']:
+    elif command.lower in short_over_actions:
+        act = short_over_actions.index(command.lower())
+        command = overworld_actions[act]
+
+    elif command.lower() in ['q', 'quit', 'exit']:
         playing = False
 
     elif command.lower() in directions:
@@ -376,41 +403,55 @@ while playing:
         except KeyError:
             print("I can't go that way")
 
-        if command.lower() in overworld_actions[0]:
-            print(player.inventory)
+    elif command.lower() in overworld_actions[0]:  # inventory
+        print(player.inventory)
+        if command.lower() == inventory_actions[2]:
+            command = input(">_ What item do you want to use?")
 
-        elif command.lower() in overworld_actions[2]:
-            phrase = input("What do you want to pick up?")
-            for item in player.current_location.items:
-                if phrase == item.name:
-                    print("You pick up the %s" % item.name)
-                    player.inventory.append(item.name)
-                    player.current_location.items.remove(item)
-                else:
-                    print("That item isn't in this room/ doesn't exist.")
+    elif command.lower() in overworld_actions[1]:  # attack
+        for enemy in player.current_location.enemies:
+            print(enemy.name)
+            p_target = input(">_ Which enemy do you want to attack?")
+            if p_target == enemy.name:
+                player.attack(enemy)
 
-        elif command.lower() in overworld_actions[3]:
-            for item in player.current_location.items:
-                print("There is a %s in here" % item.name)
-                if item in player.current_location.items is None:
-                    print("There are no items here.")
-            for i in range(len(player.current_location.characters)):
-                print("There are %d characters in here." % len(player.current_location.characters))
-                if i is None:
-                    print("There are no characters in here.")
-            for i in range(len(player.current_location.enemies)):
-                print("There are %d enemies in here." % len(player.current_location.enemies))
-                if i is None:
-                    print("There are no enemies in here.")
+    elif command.lower() in overworld_actions[2]:  # take command
+        phrase = input(">_ What do you want to take?")
+        for item in player.current_location.items:
+            if phrase == item.name:
+                print("You take the %s" % item.name)
+                player.inventory.append(item.name)
+                player.current_location.items.remove(item)
+            else:
+                print("That item isn't in this room/ doesn't exist.")
 
-        elif command.lower() in overworld_actions[4]:
-            phrase = input("What do you want to drop?")
-            for item in player.current_location.items:
-                if phrase == item.name:
-                    print("You drop the %s" % item.name)
-                    player.inventory.remove(item.name)
-                    player.current_location.items.append(item)
-                else:
-                    print("You don't have that item.")
+    elif command.lower() in overworld_actions[3]:  # scan
+        for item in player.current_location.items:
+            print("There is a %s in here" % item.name)
+            if item in player.current_location.items is None:
+                print("There are no items here.")
+        for i in range(len(player.current_location.characters)):
+            print("There are %d characters in here." % len(player.current_location.characters))
+            if i is None:
+                print("There are no characters in here.")
+        for i in range(len(player.current_location.enemies)):
+            print("There are %d enemies in here." % len(player.current_location.enemies))
+            if i is None:
+                print("There are no enemies in here.")
+
+    elif command.lower() in overworld_actions[4]:  # drop
+        command = input(">_ What do you want to drop?")
+        for item in player.current_location.items:
+            if command.lower() == item.name:
+                print("You drop the %s" % item.name)
+                player.inventory.remove(item.name)
+                player.current_location.items.append(item)
+            else:
+                print("You don't have that item.")
+
+    elif command.lower() in overworld_actions[5]:  # help
+        print("Move by typing the cardinal directions. Check rooms by typing 'scan' or 'sc'"
+              "Pick up things by typing 'take' or 'ak'. 'Check your inventory by typing 'inventory' or 'i'"
+              "Attack by typing 'a'.")
     else:
         print("Command Not Found")
